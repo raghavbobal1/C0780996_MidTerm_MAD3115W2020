@@ -13,6 +13,7 @@
 		BDD9AAB82410E69600DB5C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD9AAB62410E69600DB5C2F /* Main.storyboard */; };
 		BDD9AABA2410E69A00DB5C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */; };
 		BDD9AABD2410E69A00DB5C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */; };
+		BDD9AAC62410EF3F00DB5C2F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAC52410EF3F00DB5C2F /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDD9AABC2410E69A00DB5C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDD9AABE2410E69A00DB5C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD9AAC52410EF3F00DB5C2F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		BDD9AAAF2410E69600DB5C2F /* C0780996_MidTerm_MAD3115W2020 */ = {
 			isa = PBXGroup;
 			children = (
+				BDD9AAC42410EEC600DB5C2F /* Required Classes */,
 				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
 				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
 				BDD9AAB42410E69600DB5C2F /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
 			);
 			path = C0780996_MidTerm_MAD3115W2020;
+			sourceTree = "<group>";
+		};
+		BDD9AAC42410EEC600DB5C2F /* Required Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9AAC52410EF3F00DB5C2F /* Customer.swift */,
+			);
+			path = "Required Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				BDD9AAB52410E69600DB5C2F /* ViewController.swift in Sources */,
 				BDD9AAB12410E69600DB5C2F /* AppDelegate.swift in Sources */,
 				BDD9AAB32410E69600DB5C2F /* SceneDelegate.swift in Sources */,
+				BDD9AAC62410EF3F00DB5C2F /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
