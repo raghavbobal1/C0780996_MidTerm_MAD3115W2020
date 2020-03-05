@@ -17,6 +17,19 @@ public class Customer
     {return "\(firstName) \(lastName)"}
     private var emailId: String
     private var mobileNumber:String
-    var totalBill: Double
    
+
+       /*This function is for validating the email address
+        provided by the customer*/
+
+          init(customerId: Int, firstName: String, lastName: String, emailId: String, mobileNumber:String)
+          {
+              self.customerId = customerId
+              self.firstName = firstName
+              self.lastName = lastName
+              self.mobileNumber = mobileNumber
+              self.emailId = emailId
+            
+          }
+    
 }
