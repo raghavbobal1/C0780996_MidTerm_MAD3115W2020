@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Customer
+public class Customer: IDisplayDelegate
 {
     var customerId: Int
     private var firstName: String
@@ -64,5 +64,14 @@ public class Customer
                   }
                     
             }
+    
+    func display()
+      {
+          print("---------------- Customer Information ----------------")
+          print("Customer ID: \(self.customerId)")
+          print("Name: \(self.fullName)")
+          print("Email ID: \(self.emailId)")
+          print("Mobile Number: \(self.mobileNumber)")
+      }
           
 }
