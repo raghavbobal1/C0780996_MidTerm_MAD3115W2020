@@ -73,6 +73,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCL-Y4-7Q6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All rights reserved since 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-11-HmD">
                                 <rect key="frame" x="90" y="812" width="234" height="21"/>
@@ -87,7 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vBK-Dg-LBy"/>
                     <connections>
-                        <outlet property="emailTxt" destination="LDG-JT-GFZ" id="0w3-AY-23b"/>
+                        <outlet property="emailTxt" destination="Gzo-1x-VjS" id="sYf-Mz-lhN"/>
                         <outlet property="passwordTxt" destination="LDG-JT-GFZ" id="Rj9-Yg-h8j"/>
                         <outlet property="remMeSwitch" destination="6J5-ZK-ybd" id="Egu-Gy-UOu"/>
                     </connections>
