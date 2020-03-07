@@ -10,13 +10,11 @@ import Foundation
 
 public class Customer
 {
-    var customerId: Int
-    private var firstName: String
-    private var lastName: String
-    private var fullName: String
-    {return "\(firstName) \(lastName)"}
-    private var emailId: String
-    private var mobileNumber:String
+    var customerId: String
+    var name: String
+    var emailId: String
+    var password: String
+    var mobileNumber:String
    
 
      /*This function is for validating the email address
@@ -46,12 +44,12 @@ public class Customer
           return  returnValue
           }
 
-          init(customerId: Int, firstName: String, lastName: String, emailId: String, mobileNumber:String)
+    init(customerId: String, name: String, emailId: String,mobileNumber:String, password:String)
           {
               self.customerId = customerId
-              self.firstName = firstName
-              self.lastName = lastName
+              self.name = name
               self.mobileNumber = mobileNumber
+              self.password = password
               self.emailId = emailId
                 if isValid(emailAddressString: self.emailId)
                   {

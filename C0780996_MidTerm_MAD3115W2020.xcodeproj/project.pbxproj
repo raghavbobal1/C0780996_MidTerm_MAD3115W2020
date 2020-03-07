@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7127182411B47E0082761B /* CustomerListTableViewController.swift */; };
+		BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */; };
+		BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */; };
+		BD857FCC24144B1A00E2634F /* InfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FCB24144B1A00E2634F /* InfoStorage.swift */; };
 		BDD9AAB12410E69600DB5C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */; };
 		BDD9AAB32410E69600DB5C2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */; };
 		BDD9AAB52410E69600DB5C2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAB42410E69600DB5C2F /* LoginViewController.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		BD7127182411B47E0082761B /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
+		BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
+		BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
+		BD857FCB24144B1A00E2634F /* InfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStorage.swift; sourceTree = "<group>"; };
 		BDD9AAAD2410E69600DB5C2F /* C0780996_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0780996_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD857FC8241449FC00E2634F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9AAB42410E69600DB5C2F /* LoginViewController.swift */,
+				BD7127182411B47E0082761B /* CustomerListTableViewController.swift */,
+				BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */,
+				BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		BDD9AAA42410E69600DB5C2F = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +79,9 @@
 			children = (
 				BDD9AAC42410EEC600DB5C2F /* Required Classes */,
 				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
+				BD857FCB24144B1A00E2634F /* InfoStorage.swift */,
 				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
-				BDD9AAB42410E69600DB5C2F /* LoginViewController.swift */,
-				BD7127182411B47E0082761B /* CustomerListTableViewController.swift */,
+				BD857FC8241449FC00E2634F /* ViewController */,
 				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
 				BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */,
 				BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */,
@@ -152,9 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */,
+				BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */,
 				BDD9AAB52410E69600DB5C2F /* LoginViewController.swift in Sources */,
 				BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */,
 				BDD9AAB12410E69600DB5C2F /* AppDelegate.swift in Sources */,
+				BD857FCC24144B1A00E2634F /* InfoStorage.swift in Sources */,
 				BDD9AAB32410E69600DB5C2F /* SceneDelegate.swift in Sources */,
 				BDD9AAC62410EF3F00DB5C2F /* Customer.swift in Sources */,
 			);
