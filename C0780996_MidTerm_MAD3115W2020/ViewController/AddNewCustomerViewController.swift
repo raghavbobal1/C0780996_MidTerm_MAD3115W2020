@@ -26,6 +26,39 @@ class AddNewCustomerViewController: UIViewController
         let password = newCustomerPasswordtxt.text!
         let mobileNumber = newCustomerMobileNumbertxt.text!
         
+        if(id == "" || name == "" || password == "")
+             {
+                 let alertController = UIAlertController(title:"Error", message: "Invalid entry", preferredStyle: .alert)
+                 alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                 self.present(alertController, animated: true, completion: nil)
+                 return
+             }
+             
+             if(Validations.isValid(email: email) == false && Validations.mobileNumber(number: mobileNumber) == false)
+             {
+                let alertController = UIAlertController(title:"Error", message: "Invalid email ID and phone number", preferredStyle: .alert)
+                 alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                 self.present(alertController, animated: true, completion: nil)
+                 return
+             }
+             
+             if(Validations.isValid(email: email) == false)
+                 {
+                     let alertController = UIAlertController(title:"Error", message: "Invalid email ID", preferredStyle: .alert)
+                     alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                     self.present(alertController, animated: true, completion: nil)
+                     return
+                 }
+             
+             if(Validations.mobileNumber(number: mobileNumber) == false)
+             {
+                 let alertController = UIAlertController(title:"Error", message: "Invalid phone number", preferredStyle: .alert)
+                 alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                 self.present(alertController, animated: true, completion: nil)
+                 return
+             }
+        
+//            let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!,userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!,location: txtNewCustomerLocation.text!, dateOfBirth: txtNewCustomerDoB!.text!)
     }
     
     override func viewDidLoad()

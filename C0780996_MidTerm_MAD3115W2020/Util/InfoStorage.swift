@@ -22,10 +22,10 @@ static func getInstance() -> InfoStorage{
 return repoObj
     }
     
-    var c1 = (Customer(customerId:"001",name: "Raghav Bobal", emailId: "raghav@gmail.com", mobileNumber: "647-937-0707",password: "rgv123"))
-    var c2 = (Customer(customerId:"002",name: "Kush Bhatia", emailId: "kush@gmail.com", mobileNumber: "999-039-0900",password: "kush123"))
-    var c3 = (Customer(customerId:"003",name: "Uday Shetty", emailId: "udaybhai@gmail.com", mobileNumber: "123-456-7890",password: "uday123"))
-    var c4 = (Customer(customerId:"004",name: "Majnu Bhai", emailId: "sagarpanday@gmail.com", mobileNumber: "123-456-8888",password: "majnu123"))
+    var c1 = (Customer(customerId:"001",name: "Raghav Bobal", emailId: "raghav@gmail.com", mobileNumber: "6479370707",password: "rgv123"))
+    var c2 = (Customer(customerId:"002",name: "Kush Bhatia", emailId: "kush@gmail.com", mobileNumber: "9990390900",password: "kush123"))
+    var c3 = (Customer(customerId:"003",name: "Uday Shetty", emailId: "udaybhai@gmail.com", mobileNumber: "1234567890",password: "uday123"))
+    var c4 = (Customer(customerId:"004",name: "Majnu Bhai", emailId: "sagarpanday@gmail.com", mobileNumber: "1234568888",password: "majnu123"))
     
 func addCust(customer: Customer)
   {

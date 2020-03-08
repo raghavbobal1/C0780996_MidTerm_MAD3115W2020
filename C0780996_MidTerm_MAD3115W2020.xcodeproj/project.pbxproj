@@ -11,6 +11,7 @@
 		BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */; };
 		BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */; };
 		BD857FCC24144B1A00E2634F /* InfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FCB24144B1A00E2634F /* InfoStorage.swift */; };
+		BD96C4C924149ADE002772BB /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96C4C824149ADE002772BB /* Exceptions.swift */; };
 		BDD9AAB12410E69600DB5C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */; };
 		BDD9AAB32410E69600DB5C2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */; };
 		BDD9AAB52410E69600DB5C2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAB42410E69600DB5C2F /* LoginViewController.swift */; };
@@ -25,6 +26,7 @@
 		BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
 		BD857FCB24144B1A00E2634F /* InfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStorage.swift; sourceTree = "<group>"; };
+		BD96C4C824149ADE002772BB /* Exceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		BDD9AAAD2410E69600DB5C2F /* C0780996_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0780996_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,41 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		BD96C4CA24149AE3002772BB /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				BD96C4C824149ADE002772BB /* Exceptions.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		BD96C4CB24149AF4002772BB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BD857FCB24144B1A00E2634F /* InfoStorage.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BD96C4CD24149B1F002772BB /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
+				BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		BD96C4CE24149B2F002772BB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
+				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
+				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		BDD9AAA42410E69600DB5C2F = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				BDD9AAC42410EEC600DB5C2F /* Required Classes */,
-				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
-				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
-				BD857FCB24144B1A00E2634F /* InfoStorage.swift */,
+				BD96C4CE24149B2F002772BB /* Delegates */,
+				BD96C4CD24149B1F002772BB /* StoryBoards */,
+				BD96C4CA24149AE3002772BB /* Exceptions */,
+				BD96C4CB24149AF4002772BB /* Util */,
 				BD857FC8241449FC00E2634F /* ViewController */,
-				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
 				BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */,
-				BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */,
-				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
 			);
 			path = C0780996_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -170,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */,
+				BD96C4C924149ADE002772BB /* Exceptions.swift in Sources */,
 				BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */,
 				BDD9AAB52410E69600DB5C2F /* LoginViewController.swift in Sources */,
 				BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */,
