@@ -79,8 +79,8 @@
 			children = (
 				BDD9AAC42410EEC600DB5C2F /* Required Classes */,
 				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
-				BD857FCB24144B1A00E2634F /* InfoStorage.swift */,
 				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
+				BD857FCB24144B1A00E2634F /* InfoStorage.swift */,
 				BD857FC8241449FC00E2634F /* ViewController */,
 				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
 				BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */,

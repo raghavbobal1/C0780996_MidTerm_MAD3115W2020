@@ -10,14 +10,29 @@ import UIKit
 
 class CustomerListTableViewController: UIViewController {
 
+    @IBOutlet weak var lblListOfCust: UILabel!
+    @IBOutlet weak var tblviewCustomerList: UITableView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.logOutBtn()
+        self.navigationItem.hidesBackButton = true
+       
     }
     
+    private func logOutBtn()
+    {
+        let logOutButton = UIBarButtonItem(title:"Log Out",style:.plain,target:self,action:#selector(self.logOut))
+        self.navigationItem.leftBarButtonItem = logOutButton
+    }
 
+    @objc func logOut()
+       {
+           let sb = UIStoryboard(name: "Main", bundle: nil)
+           let loginVC = sb.instantiateViewController(identifier: "loginVC") as! LoginViewController
+           navigationController?.pushViewController(loginVC, animated: true)
+       }
     /*
     // MARK: - Navigation
 

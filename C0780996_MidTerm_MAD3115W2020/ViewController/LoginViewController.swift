@@ -40,9 +40,35 @@ class LoginViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
           }
         
+        let customers = InfoStorage.getInstance().dictToArray()
+              
+        var email = self.emailTxt.text
+        var password = self.passwordTxt.text
+              for i in customers
+              {
+                if ((email == i.emailId) && (password == i.password))
+                  {
+                      let sb = UIStoryboard(name: "Main", bundle: nil)
+                      let CustomerListTableVC = sb.instantiateViewController(identifier: "CustomerListTableVC") as! CustomerListTableViewController
+                      navigationController?.pushViewController(CustomerListTableVC, animated: true)
+
+                      if remMeSwitch.isOn
+                          {
+                          let defaults = UserDefaults.standard
+                          let name = defaults.set(emailTxt.text, forKey: "name")
+                          let password = defaults.set(passwordTxt.text, forKey: "password")
+                          }
+                      return
+                  }
+              }
+                      let alertController = UIAlertController(title: "Error", message: "Incorrect username/password", preferredStyle: .alert)
+                      alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                      self.present(alertController, animated: true, completion: nil)
+                            
+          }
+        
     }
    
 
 
-}
 

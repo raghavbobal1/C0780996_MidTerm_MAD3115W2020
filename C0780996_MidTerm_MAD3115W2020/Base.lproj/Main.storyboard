@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
         <!--CustomerListTableViewController-->
         <scene sceneID="nfk-Sf-SoG">
             <objects>
-                <viewController title="CustomerListTableViewController" id="Zjb-kS-KZP" customClass="CustomerListTableViewController" customModule="C0780996_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customerListTableVC" title="CustomerListTableViewController" id="Zjb-kS-KZP" customClass="CustomerListTableViewController" customModule="C0780996_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJA-vT-1ub">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,22 +132,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWb-Ar-Eo0" id="uyJ-1Y-1oU">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9y-MQ-JeY">
-                                                    <rect key="frame" x="20" y="0.0" width="186" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <attributedString key="attributedText">
-                                                        <fragment content="Customer Names-">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.28826712375422442" green="0.064218319218783695" blue="0.35831871053678754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="28" name="AmericanTypewriter-Condensed"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -161,6 +145,10 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="pKd-FW-nbU"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lblListOfCust" destination="pSq-13-Ogr" id="gAT-1O-cb4"/>
+                        <outlet property="tblviewCustomerList" destination="WoL-PC-K6k" id="WQ9-zG-iOS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teA-vj-opI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,7 +157,7 @@
         <!--Show Bill Details View Controller-->
         <scene sceneID="Toc-s6-bEc">
             <objects>
-                <viewController id="ISg-k4-5VI" customClass="ShowBillDetailsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showBillDetailsVC" id="ISg-k4-5VI" customClass="ShowBillDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67f-MW-Zlw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +245,7 @@
         <!--Add New Customer View Controller-->
         <scene sceneID="evv-Vw-Djx">
             <objects>
-                <viewController id="4ef-G5-8de" customClass="AddNewCustomerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNewCustomerVC" id="4ef-G5-8de" customClass="AddNewCustomerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gmc-HH-ePN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
