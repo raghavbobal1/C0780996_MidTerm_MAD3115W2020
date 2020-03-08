@@ -16,13 +16,16 @@ class Customer
     var email: String
     var userName: String
     var password: String?
+    var mobileNumber: String
 
-    init(customerId: String, name: String, email: String, userName: String, password: String) {
+    init(customerId: String, name: String, email: String, userName: String, password: String,mobileNumber: String)
+    {
         self.customerId = customerId
         self.name = name
         self.email = email
         self.userName = userName
         self.password = password
+        self.mobileNumber = mobileNumber
     }
     
 }

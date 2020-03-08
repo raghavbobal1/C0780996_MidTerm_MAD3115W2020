@@ -54,19 +54,22 @@ class AddNewCustomerViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
             return
         }
-        let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!, userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!)
-DataRepository.getInstance().addCustomer(customer: c)
+        let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!, userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!, mobileNumber: txtNewCustomerNumber.text!)
+        
+            DataRepository.getInstance().addCustomer(customer: c)
         
         
         let alertController = UIAlertController(title: "Success", message: "Customer Added", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in self.dismissView()}))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
+            { action in self.dismissView()}))
         self.present(alertController, animated: true, completion: nil)
     }
         func dismissView()
         {
     navigationController?.popViewController(animated: true)
         }
-        override func viewDidLoad() {
+        override func viewDidLoad()
+        {
         super.viewDidLoad()
     }
 

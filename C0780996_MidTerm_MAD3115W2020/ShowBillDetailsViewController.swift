@@ -8,30 +8,25 @@
 
 import UIKit
 
-class ShowBillDetailsViewController: UITableViewController {
+class ShowBillDetailsViewController: UITableViewController
+{
     
-    var customers: Customer?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "BILL DETAILS"
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+        var customers: Customer?
+        @IBOutlet weak var lblCustomerId: UILabel!
+        @IBOutlet weak var lblCustomerUsername: UILabel!
+        @IBOutlet weak var lblCustomerEmail: UILabel!
+        @IBOutlet weak var lblCustomerName: UILabel!
+        @IBOutlet weak var lblMobileNo: UILabel!
+        override func viewDidLoad()
+        {
+            super.viewDidLoad()
+            self.lblCustomerId.text = customers?.customerId
+            self.lblCustomerName.text = customers?.name
+            self.lblCustomerEmail.text = customers?.email
+            self.lblCustomerUsername.text = customers?.userName
+            self.lblMobileNo.text=customers?.mobileNumber
+        }
 }
+        
 
+    

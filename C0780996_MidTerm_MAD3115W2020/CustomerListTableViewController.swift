@@ -77,7 +77,8 @@ class CustomerListTableViewController: UIViewController {
            return cell!
        }
         
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+        {
             let customers = DataRepository.getInstance().dictionaryToArray()
             let selectedCustomer = customers[indexPath.row]
             
@@ -88,14 +89,4 @@ class CustomerListTableViewController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
+    
