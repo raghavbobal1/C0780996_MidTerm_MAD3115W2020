@@ -68,15 +68,15 @@
 		BDD9AAAF2410E69600DB5C2F /* C0780996_MidTerm_MAD3115W2020 */ = {
 			isa = PBXGroup;
 			children = (
-				BDD9AAC52410EF3F00DB5C2F /* Customer.swift */,
+				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
+				BDFE34C1241504CC00A42184 /* InfoStorage.swift */,
 				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
+				BDD9AAC52410EF3F00DB5C2F /* Customer.swift */,
 				BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */,
 				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
 				BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */,
 				BD7127182411B47E0082761B /* CustomerListTableViewController.swift */,
 				BDFE34BF2415023100A42184 /* LoginViewController.swift */,
-				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
-				BDFE34C1241504CC00A42184 /* InfoStorage.swift */,
 				BD96C4C824149ADE002772BB /* Exceptions.swift */,
 				BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */,
 				BDD9AABE2410E69A00DB5C2F /* Info.plist */,

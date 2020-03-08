@@ -1,69 +1,77 @@
 //
-//  LoginViewController.swift
-//  C0780996_MidTerm_MAD3115W2020
+//  ViewController.swift
+//  C0769778_MidTerm_MAD3115W2020
 //
-//  Created by Raghav Bobal on 2020-03-08.
+//  Created by MacStudent on 2020-03-04.
 //  Copyright © 2020 com.lambton. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController
-{
-        @IBOutlet weak var emailTxt: UITextField!
-        @IBOutlet weak var passwordTxt: UITextField!
-        @IBOutlet weak var remMeSwitch: UISwitch!
-        
-        override func viewDidLoad()
-        {
-           super.viewDidLoad()
-           emailTxt.text = ""
-           passwordTxt.text = ""
-           let userDf = UserDefaults.standard
-           let name = userDf.string(forKey:"name")
-           let pswrd = userDf.string(forKey: "password")
-           self.navigationItem.hidesBackButton = true
-           if let uName = name
-            {
-                emailTxt.text = uName
-            }
-            if let password = pswrd
-            {
-                passwordTxt.text=password
-            }
-         }
 
-        @IBAction func btnLogin(_ sender: Any)
+class LoginViewController: UIViewController {
+
+    
+    @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var swchRememberMe: UISwitch!
+
+    override func viewDidLoad()
     {
-            if (emailTxt.text == "" || passwordTxt.text == "")
-              {
-            let alertController = UIAlertController(title: "Error", message: "Email/Password is blank", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                self.present(alertController, animated: true, completion: nil)
-              }
-            
-        let customers = InfoStorage.getInstance().dictToArray()
-      
+        super.viewDidLoad()
+        txtName.text = ""
+        txtPassword.text = ""
+        let ud = UserDefaults.standard
+        let name = ud.string(forKey:"name")
+        let password = ud.string(forKey: "password")
+        self.navigationItem.hidesBackButton = true
+        if let nm = name
+            {
+                txtName.text = nm
+            }
+        if let pw  = password
+            {
+                txtPassword.text = pw
+            }
+    }
+    @IBAction func btnLogin(_ sender: Any)
+    {
+        
+        if (txtName.text == "" || txtPassword.text == "")
+            {
+          let alertController = UIAlertController(title: "Error", message: "Username/Password cannot be left blank", preferredStyle: .alert)
+          alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+          self.present(alertController, animated: true, completion: nil)
+            }
+
+        let customers = DataRepository.getInstance().dictionaryToArray()
+        
         for i in customers
         {
-            if ((emailTxt.text == i.emailId) && (passwordTxt.text == i.password))
+            if (txtName.text == i.userName && txtPassword.text == i.password)
             {
                 let sb = UIStoryboard(name: "Main", bundle: nil)
-                let CustomerListTableVC = sb.instantiateViewController(identifier: "CustomerListTableVC") as! CustomerListTableViewController
-                navigationController?.pushViewController(CustomerListTableVC,animated: true)
-            }
-            
-            if remMeSwitch.isOn
-            {
-                let defaults = UserDefaults.standard
-                let name = defaults.set(emailTxt.text, forKey: "name")
-                let password = defaults.set(passwordTxt.text, forKey: "password")
-            }
+                let CustomerListTableVC = sb.instantiateViewController(identifier: "customerListTableVC") as! CustomerListTableViewController
+                navigationController?.pushViewController(CustomerListTableVC, animated: true)
+
+                if swchRememberMe.isOn
+                    {
+                    let defaults = UserDefaults.standard
+                        _ = defaults.set(txtName.text, forKey: "name")
+                        _ = defaults.set(txtPassword.text, forKey: "password")
+                    }
+                    
+                else{
+                    UserDefaults.standard.removeObject(forKey: "name")
+                    UserDefaults.standard.removeObject(forKey: "password")
+                }
                 return
+            }
         }
                 let alertController = UIAlertController(title: "Error", message: "Incorrect username/password", preferredStyle: .alert)
-                    alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                    self.present(alertController, animated: true, completion: nil)
-                            
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alertController, animated: true, completion: nil)
+                      
     }
 }
+

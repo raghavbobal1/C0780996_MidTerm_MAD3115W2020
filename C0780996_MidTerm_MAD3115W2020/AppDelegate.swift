@@ -1,21 +1,21 @@
+
 //
 //  AppDelegate.swift
-//  C0780996_MidTerm_MAD3115W2020
+//  C0769778_MidTerm_MAD3115W2020
 //
-//  Created by Raghav Bobal on 2020-03-05.
+//  Created by MacStudent on 2020-03-04.
 //  Copyright © 2020 com.lambton. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder,UIApplicationDelegate
+{
 
-
-
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+    {
+        DataRepository.getInstance().loadData()
         return true
     }
 
@@ -32,7 +32,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 

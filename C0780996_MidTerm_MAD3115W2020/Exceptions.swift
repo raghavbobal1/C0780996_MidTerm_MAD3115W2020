@@ -1,54 +1,44 @@
 //
 //  Exceptions.swift
-//  C0780996_MidTerm_MAD3115W2020
+//  C0769778_MidTerm_MAD3115W2020
 //
-//  Created by Raghav Bobal on 2020-03-07.
+//  Created by MacStudent on 2020-03-06.
 //  Copyright © 2020 com.lambton. All rights reserved.
 //
 
 import Foundation
+import UIKit
 
-enum ValidationErrors: Error
+enum CustomerErrors: Error
 {
     case invalidEmail(email: String)
     case invalidNumber(number: String)
 }
 
-
-struct Validations
-{
-
-/*This function is for validating the email address
- provided by the customer*/
- 
+struct Validations {
 private static let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
-static func email(email: String) -> Bool
-    {
+static func email(email: String) -> Bool {
     
     let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegex)
-    if !emailPred.evaluate(with: email)
-        {
+    if !emailPred.evaluate(with: email){
         //throw CustomerErrors.invalidEmail(email: email)
         return false
-       }
+    }
     return true
-    }
-    
-    static func mobileNumber(number: String) -> Bool
-    {
-      if number.count != 10
-      {
-          return false
-        
-      }
-          return true
-    }
-      static func checkMobileNumber(number: String) throws
-      {
-         if number.count != 10
-         {
-             throw ValidationErrors.invalidNumber(number: number)
-         }
-       }
 }
+    
+    static func mobileNumber(number: String) -> Bool {
+    if number.count != 10 {
+        return false
+        //throw CustomerErrors.invalidNumber(number: number)
+    }
+        return true
+  }
+    static func checkMobileNumber(number: String) throws {
+       if number.count != 10 {
+           throw CustomerErrors.invalidNumber(number: number)
+       }
+     }
+}
+
