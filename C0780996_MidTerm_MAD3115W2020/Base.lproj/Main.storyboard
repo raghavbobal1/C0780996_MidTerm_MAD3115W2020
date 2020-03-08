@@ -298,12 +298,23 @@
                                 <rect key="frame" x="141" y="521" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ADD CUSTOMER"/>
+                                <connections>
+                                    <action selector="btnAddCust:" destination="4ef-G5-8de" eventType="touchUpInside" id="RW6-ge-n8z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96462160350000004" green="0.96475988629999998" blue="0.96459120509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="yPw-bw-Qj3"/>
                     </view>
                     <navigationItem key="navigationItem" id="XXc-y5-KiK"/>
+                    <connections>
+                        <outlet property="customerEmail" destination="oUD-Nc-JkA" id="dpK-5J-TGr"/>
+                        <outlet property="customerIDtxt" destination="dp8-Px-p6L" id="7VY-68-54y"/>
+                        <outlet property="customerMobileNumbertxt" destination="GSb-0b-aDJ" id="Thh-VI-qAh"/>
+                        <outlet property="customerNametxt" destination="T6T-Rc-dge" id="vk0-lT-BRg"/>
+                        <outlet property="customerPassword" destination="HXG-Yi-xoq" id="aEF-gL-LUp"/>
+                        <outlet property="lblAddCust" destination="oMT-T1-CyI" id="cg1-8Z-b57"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25A-IO-16F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
