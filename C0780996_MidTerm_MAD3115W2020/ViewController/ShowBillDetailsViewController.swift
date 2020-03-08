@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ShowBillDetailsViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ShowBillDetailsViewController: UIViewController
+{
+    var customer:Customer?
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

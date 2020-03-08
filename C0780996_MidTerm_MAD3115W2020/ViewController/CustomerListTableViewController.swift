@@ -48,16 +48,37 @@ class CustomerListTableViewController: UIViewController {
            let addNewCustomerVC = sb.instantiateViewController(identifier: "AddNewCustomerVC") as! AddNewCustomerViewController
            navigationController?.pushViewController(addNewCustomerVC, animated: true)
        }
-       
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+extension CustomerListTableViewController: UITableViewDataSource, UITableViewDelegate
+{
+    func numberOfSections(in tableView: UITableView) -> Int
+        {
+            return 1
+        }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+        {
+            return InfoStorage.getInstance().customerDictionary.count
+        }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
+            let customerArray = InfoStorage.getInstance().dictToArray()
+            let customer = customerArray[indexPath.row]
+            cell?.textLabel?.text = customer.name
+            return cell!
+        }
+     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+     {
+         let customer = InfoStorage.getInstance().dictToArray()
+         let selectedCustomer = customer[indexPath.row]
+         
+         let sb = UIStoryboard(name: "Main", bundle: nil)
+         let showBillDetailsVC = sb.instantiateViewController(identifier: "showBillDetailsVC") as ShowBillDetailsViewController
+            showBillDetailsVC.customer = selectedCustomer
+         self.navigationController?.pushViewController(showBillDetailsVC, animated: true)
+      }
+ }
