@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CustomerListTableViewController: UIViewController {
+class CustomerListTableViewController: UIViewController
+{
 
     @IBOutlet weak var lblListOfCust: UILabel!
     @IBOutlet weak var tblviewCustomerList: UITableView!
@@ -19,7 +20,11 @@ class CustomerListTableViewController: UIViewController {
         self.logOutBtn()
         self.btnToAddNewCustomer()
         self.navigationItem.hidesBackButton = true
-       
+     }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+           self.tblviewCustomerList.reloadData()
     }
     
     private func logOutBtn()
@@ -51,7 +56,7 @@ class CustomerListTableViewController: UIViewController {
 }
 
 
-extension CustomerListTableViewController: UITableViewDataSource, UITableViewDelegate
+extension CustomerListTableViewController : UITableViewDataSource,UITableViewDelegate
 {
     func numberOfSections(in tableView: UITableView) -> Int
         {

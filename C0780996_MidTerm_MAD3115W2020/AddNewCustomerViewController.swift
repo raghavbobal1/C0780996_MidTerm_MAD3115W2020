@@ -14,19 +14,13 @@ class AddNewCustomerViewController: UIViewController
     @IBOutlet weak var newCustomerIDtxt: UITextField!
     @IBOutlet weak var newCustomerNametxt: UITextField!
     @IBOutlet weak var newCustomerEmailtxt: UITextField!
-    @IBOutlet weak var newCustomerPasswordtxt: UITextField!
+    @IBOutlet weak var newCustomerPswrdtxt: UITextField!
     @IBOutlet weak var newCustomerMobileNumbertxt: UITextField!
+
     
     @IBAction func btnAddCustomer(_ sender: Any)
     {
-        let id = newCustomerIDtxt.text!
-        let name = newCustomerNametxt.text!
-        let number = newCustomerMobileNumbertxt.text!
-        let email  = newCustomerEmailtxt.text!
-        let password = newCustomerPasswordtxt.text!
-        let mobileNumber = newCustomerMobileNumbertxt.text!
-        
-        if(id == "" || name == "" || password == "")
+        if(newCustomerIDtxt.text == "" || newCustomerNametxt.text == "" || newCustomerPswrdtxt.text == "")
              {
                  let alertController = UIAlertController(title:"Error", message: "Invalid entry", preferredStyle: .alert)
                  alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -34,7 +28,7 @@ class AddNewCustomerViewController: UIViewController
                  return
              }
              
-             if(Validations.isValid(email: email) == false && Validations.mobileNumber(number: mobileNumber) == false)
+        if(Validations.email(email: newCustomerEmailtxt.text!) == false && Validations.mobileNumber(number: newCustomerMobileNumbertxt.text!) == false)
              {
                 let alertController = UIAlertController(title:"Error", message: "Invalid email ID and phone number", preferredStyle: .alert)
                  alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -42,7 +36,7 @@ class AddNewCustomerViewController: UIViewController
                  return
              }
              
-             if(Validations.isValid(email: email) == false)
+        if(Validations.email(email: newCustomerEmailtxt.text!) == false)
                  {
                      let alertController = UIAlertController(title:"Error", message: "Invalid email ID", preferredStyle: .alert)
                      alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -50,7 +44,7 @@ class AddNewCustomerViewController: UIViewController
                      return
                  }
              
-             if(Validations.mobileNumber(number: mobileNumber) == false)
+        if(Validations.mobileNumber(number: newCustomerMobileNumbertxt.text!) == false)
              {
                  let alertController = UIAlertController(title:"Error", message: "Invalid phone number", preferredStyle: .alert)
                  alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -58,13 +52,10 @@ class AddNewCustomerViewController: UIViewController
                  return
              }
         
-//            let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!,userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!,location: txtNewCustomerLocation.text!, dateOfBirth: txtNewCustomerDoB!.text!)
-    }
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
 
-    }
+
+
     
+    }
+
 }

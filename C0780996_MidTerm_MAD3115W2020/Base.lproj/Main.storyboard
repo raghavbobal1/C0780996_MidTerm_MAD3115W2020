@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0780996_MidTerm_MAD3115W2020" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,6 +135,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zjb-kS-KZP" id="oXY-Bi-oXb"/>
+                                    <outlet property="delegate" destination="Zjb-kS-KZP" id="Ggg-DD-E3Z"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96462160350000004" green="0.96475988629999998" blue="0.96459120509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -157,7 +161,7 @@
         <!--Show Bill Details View Controller-->
         <scene sceneID="Toc-s6-bEc">
             <objects>
-                <viewController storyboardIdentifier="showBillDetailsVC" id="ISg-k4-5VI" customClass="ShowBillDetailsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showBillDetailsVC" id="ISg-k4-5VI" customClass="ShowBillDetailsViewController" customModule="C0780996_MidTerm_MAD3115W2020" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67f-MW-Zlw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +249,7 @@
         <!--Add New Customer View Controller-->
         <scene sceneID="evv-Vw-Djx">
             <objects>
-                <viewController storyboardIdentifier="AddNewCustomerVC" id="4ef-G5-8de" customClass="AddNewCustomerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNewCustomerVC" id="4ef-G5-8de" customClass="AddNewCustomerViewController" customModule="C0780996_MidTerm_MAD3115W2020" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gmc-HH-ePN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,6 +304,7 @@
                                 <state key="normal" title="ADD CUSTOMER"/>
                                 <connections>
                                     <action selector="btnAddCust:" destination="4ef-G5-8de" eventType="touchUpInside" id="RW6-ge-n8z"/>
+                                    <action selector="btnAddCustomer:" destination="4ef-G5-8de" eventType="touchUpInside" id="7ZX-fc-eR4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -314,6 +319,11 @@
                         <outlet property="customerNametxt" destination="T6T-Rc-dge" id="vk0-lT-BRg"/>
                         <outlet property="customerPassword" destination="HXG-Yi-xoq" id="aEF-gL-LUp"/>
                         <outlet property="lblAddCust" destination="oMT-T1-CyI" id="cg1-8Z-b57"/>
+                        <outlet property="newCustomerEmail" destination="oUD-Nc-JkA" id="x9Z-ED-nif"/>
+                        <outlet property="newCustomerIDtxt" destination="dp8-Px-p6L" id="aBd-nU-5Pr"/>
+                        <outlet property="newCustomerMobileNumbertxt" destination="GSb-0b-aDJ" id="eLf-gU-G2f"/>
+                        <outlet property="newCustomerNametxt" destination="T6T-Rc-dge" id="MWz-Lk-zvt"/>
+                        <outlet property="newCustomerPswrd" destination="HXG-Yi-xoq" id="eyA-4U-V1S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25A-IO-16F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
