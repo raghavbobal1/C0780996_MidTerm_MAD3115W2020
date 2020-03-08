@@ -17,6 +17,7 @@ class CustomerListTableViewController: UIViewController {
     {
         super.viewDidLoad()
         self.logOutBtn()
+        self.btnToAddNewCustomer()
         self.navigationItem.hidesBackButton = true
        
     }
@@ -33,6 +34,22 @@ class CustomerListTableViewController: UIViewController {
            let loginVC = sb.instantiateViewController(identifier: "loginVC") as! LoginViewController
            navigationController?.pushViewController(loginVC, animated: true)
        }
+    
+
+    private func btnToAddNewCustomer()
+       {
+           let newCustomerButton = UIBarButtonItem(title:"New Customer",style:.plain,target:self,action:#selector(self.addNewCustomer))
+           self.navigationItem.rightBarButtonItem = newCustomerButton
+       }
+    
+    @objc func addNewCustomer()
+       {
+           let sb = UIStoryboard(name: "Main", bundle: nil)
+           let addNewCustomerVC = sb.instantiateViewController(identifier: "AddNewCustomerVC") as! AddNewCustomerViewController
+           navigationController?.pushViewController(addNewCustomerVC, animated: true)
+       }
+       
+    
     /*
     // MARK: - Navigation
 
