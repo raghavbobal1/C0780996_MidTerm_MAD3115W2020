@@ -9,7 +9,8 @@
 
 import UIKit
 
-class AddNewCustomerViewController: UIViewController {
+class AddNewCustomerViewController: UIViewController
+{
 
     @IBOutlet weak var lblCustomerInformation: UILabel!
     @IBOutlet weak var txtNewCustomerId: UITextField!
@@ -60,18 +61,18 @@ class AddNewCustomerViewController: UIViewController {
         
         
         let alertController = UIAlertController(title: "Success", message: "Customer Added", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
-            { action in self.dismissView()}))
-        self.present(alertController, animated: true, completion: nil)
-    }
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
+            {   action in self.dismissView()}))
+                self.present(alertController, animated: true, completion: nil)
+            }
         func dismissView()
         {
-    navigationController?.popViewController(animated: true)
+            navigationController?.popViewController(animated: true)
         }
-        override func viewDidLoad()
+            override func viewDidLoad()
         {
-        super.viewDidLoad()
-    }
+            super.viewDidLoad()
+        }
 
 }
 

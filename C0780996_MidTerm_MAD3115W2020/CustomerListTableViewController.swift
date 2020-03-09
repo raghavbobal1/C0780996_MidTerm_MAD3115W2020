@@ -9,18 +9,19 @@
 
 import UIKit
 
-class CustomerListTableViewController: UIViewController {
+class CustomerListTableViewController: UIViewController
+{
 
     @IBOutlet weak var lblCustomerList: UILabel!
     @IBOutlet weak var tblViewCustomerList: UITableView!
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         self.addlogOutButton()
         self.addNewCustomerButton()
         self.navigationItem.hidesBackButton = true
-        //DataRepository.getInstance().loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +41,7 @@ class CustomerListTableViewController: UIViewController {
         navigationController?.pushViewController(loginVC, animated: true)
     }
     
-    //BUTTON TO ADD NEW CUSTOMER
+    
     private func addNewCustomerButton()
     {
         let newCustomerButton = UIBarButtonItem(title: "New Customer", style: .plain, target: self, action: #selector(self.addCustomer))
@@ -54,7 +55,6 @@ class CustomerListTableViewController: UIViewController {
         navigationController?.pushViewController(addNewCustomerVC, animated: true)
     }
     
-    //CUSTOMER OBJECTS
 
 }
    extension CustomerListTableViewController: UITableViewDataSource, UITableViewDelegate

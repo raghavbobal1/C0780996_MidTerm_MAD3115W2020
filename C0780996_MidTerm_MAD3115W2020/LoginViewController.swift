@@ -9,9 +9,8 @@
 import UIKit
 
 
-class LoginViewController: UIViewController {
-
-    
+class LoginViewController: UIViewController
+{
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var swchRememberMe: UISwitch!

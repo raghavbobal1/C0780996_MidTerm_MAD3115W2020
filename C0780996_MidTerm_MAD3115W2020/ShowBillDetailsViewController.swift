@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowBillDetailsViewController: UITableViewController
+class ShowBillDetailsViewController: UIViewController
 {
     
         var customers: Customer?
