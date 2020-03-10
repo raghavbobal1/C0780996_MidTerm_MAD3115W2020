@@ -12,6 +12,8 @@
 		BD1111C424183A70006FDA3E /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111C324183A70006FDA3E /* Hydro.swift */; };
 		BD1111C624183AD6006FDA3E /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111C524183AD6006FDA3E /* Internet.swift */; };
 		BD1111C824183BC9006FDA3E /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111C724183BC9006FDA3E /* Mobile.swift */; };
+		BD1111CA24184C0B006FDA3E /* BillInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */; };
+		BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CC24185765006FDA3E /* Extension+Date.swift */; };
 		BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7127182411B47E0082761B /* CustomerListTableViewController.swift */; };
 		BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */; };
 		BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */; };
@@ -32,6 +34,8 @@
 		BD1111C324183A70006FDA3E /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		BD1111C524183AD6006FDA3E /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		BD1111C724183BC9006FDA3E /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInfoViewController.swift; sourceTree = "<group>"; };
+		BD1111CC24185765006FDA3E /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		BD7127182411B47E0082761B /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 			path = "Required Classes and Enums";
 			sourceTree = "<group>";
 		};
+		BD1111CB2418573F006FDA3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD1111CC24185765006FDA3E /* Extension+Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BDD9AAA42410E69600DB5C2F = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +111,9 @@
 				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
 				BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */,
 				BD7127182411B47E0082761B /* CustomerListTableViewController.swift */,
+				BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */,
 				BDFE34BF2415023100A42184 /* LoginViewController.swift */,
+				BD1111CB2418573F006FDA3E /* Extensions */,
 				BD96C4C824149ADE002772BB /* Exceptions.swift */,
 				BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */,
 				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
@@ -184,6 +198,7 @@
 				BDFE34C2241504CC00A42184 /* InfoStorage.swift in Sources */,
 				BD1111C824183BC9006FDA3E /* Mobile.swift in Sources */,
 				BD96C4C924149ADE002772BB /* Exceptions.swift in Sources */,
+				BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */,
 				BD1111C424183A70006FDA3E /* Hydro.swift in Sources */,
 				BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */,
 				BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */,
@@ -191,6 +206,7 @@
 				BD1111C2241839D4006FDA3E /* BillType.swift in Sources */,
 				BDD9AAB12410E69600DB5C2F /* AppDelegate.swift in Sources */,
 				BDD9AAB32410E69600DB5C2F /* SceneDelegate.swift in Sources */,
+				BD1111CA24184C0B006FDA3E /* BillInfoViewController.swift in Sources */,
 				BD1111C624183AD6006FDA3E /* Internet.swift in Sources */,
 				BDD9AAC62410EF3F00DB5C2F /* Customer.swift in Sources */,
 			);
