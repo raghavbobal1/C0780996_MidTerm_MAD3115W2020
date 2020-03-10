@@ -19,7 +19,8 @@ class AddNewCustomerViewController: UIViewController
     @IBOutlet weak var txtNewCustomerNumber: UITextField!
     @IBOutlet weak var txtNewCustomerPassword: UITextField!
     @IBOutlet weak var txtNewCustomerUserName: UITextField!
-
+    @IBOutlet weak var txtNewCustomerDOB: UITextField!
+    
     @IBAction func btnAddNewCustomer(_ sender: Any) {
         let txtNumber = txtNewCustomerNumber.text!
         let txtmail  = txtNewCustomerEmail.text!
@@ -55,7 +56,7 @@ class AddNewCustomerViewController: UIViewController
             self.present(alertController, animated: true, completion: nil)
             return
         }
-        let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!, userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!, mobileNumber: txtNewCustomerNumber.text!)
+        let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!, userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!, mobileNumber: txtNewCustomerNumber.text!, dob: txtNewCustomerDOB.text)
         
             DataRepository.getInstance().addCustomer(customer: c)
         
