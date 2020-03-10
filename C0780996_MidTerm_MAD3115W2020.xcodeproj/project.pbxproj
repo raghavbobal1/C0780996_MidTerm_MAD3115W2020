@@ -15,6 +15,7 @@
 		BD1111CA24184C0B006FDA3E /* BillInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */; };
 		BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CC24185765006FDA3E /* Extension+Date.swift */; };
 		BD1111CF24185850006FDA3E /* Extension+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CE24185850006FDA3E /* Extension+Currency.swift */; };
+		BD1111D12418592C006FDA3E /* Extension+UITextField .swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111D02418592C006FDA3E /* Extension+UITextField .swift */; };
 		BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7127182411B47E0082761B /* CustomerListTableViewController.swift */; };
 		BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */; };
 		BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */; };
@@ -38,6 +39,7 @@
 		BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInfoViewController.swift; sourceTree = "<group>"; };
 		BD1111CC24185765006FDA3E /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		BD1111CE24185850006FDA3E /* Extension+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Currency.swift"; sourceTree = "<group>"; };
+		BD1111D02418592C006FDA3E /* Extension+UITextField .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField .swift"; sourceTree = "<group>"; };
 		BD7127182411B47E0082761B /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1111CC24185765006FDA3E /* Extension+Date.swift */,
+				BD1111D02418592C006FDA3E /* Extension+UITextField .swift */,
 				BD1111CE24185850006FDA3E /* Extension+Currency.swift */,
 			);
 			path = Extensions;
@@ -204,6 +207,7 @@
 				BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */,
 				BD1111C424183A70006FDA3E /* Hydro.swift in Sources */,
 				BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */,
+				BD1111D12418592C006FDA3E /* Extension+UITextField .swift in Sources */,
 				BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */,
 				BD1111C0241839B8006FDA3E /* Bill.swift in Sources */,
 				BD1111C2241839D4006FDA3E /* BillType.swift in Sources */,
