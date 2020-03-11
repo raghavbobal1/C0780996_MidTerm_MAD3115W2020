@@ -24,7 +24,7 @@ public class Mobile: Bill
            self.mobileNumber = mobileNumber
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
-            super.init(billId: billId, billDate: billDate, billType: billType)
+           super.init(billId: billId, billDate: billDate, billType: billType)
     }
 
     override func billCalculation() -> Double
@@ -37,7 +37,7 @@ public class Mobile: Bill
            {
                 minutePrice += 35
            }
-         else if (callMinutesUsed > 300 && callMinutesUsed < 500 )
+         else if (callMinutesUsed > 300 && callMinutesUsed < 500)
            {
                 minutePrice += 50
            }

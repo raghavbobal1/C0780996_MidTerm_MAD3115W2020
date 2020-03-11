@@ -90,6 +90,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BD1111D7241877FC006FDA3E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BDFE34C1241504CC00A42184 /* InfoStorage.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		BDD9AAA42410E69600DB5C2F = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				BD1111BE24183977006FDA3E /* Required Classes and Enums */,
+				BD1111D7241877FC006FDA3E /* Repository */,
 				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
-				BDFE34C1241504CC00A42184 /* InfoStorage.swift */,
 				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
 				BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */,
 				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
