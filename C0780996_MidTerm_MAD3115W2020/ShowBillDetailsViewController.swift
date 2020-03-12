@@ -34,7 +34,9 @@ class ShowBillDetailsViewController: UIViewController
     
     @IBAction func btnViewBills(_ sender: Any)
     {
-        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let BillInfoVC = sb.instantiateViewController(identifier: "billinfoVC") as! BillInfoViewController
+        navigationController?.pushViewController(BillInfoVC, animated: true)
     }
     
     

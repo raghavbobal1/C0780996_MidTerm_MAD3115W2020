@@ -16,6 +16,7 @@
 		BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CC24185765006FDA3E /* Extension+Date.swift */; };
 		BD1111CF24185850006FDA3E /* Extension+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CE24185850006FDA3E /* Extension+Currency.swift */; };
 		BD1111D12418592C006FDA3E /* Extension+UITextField .swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111D02418592C006FDA3E /* Extension+UITextField .swift */; };
+		BD1111DA2419ABE8006FDA3E /* CustomerInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD1111D92419ABE8006FDA3E /* CustomerInfo.plist */; };
 		BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7127182411B47E0082761B /* CustomerListTableViewController.swift */; };
 		BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */; };
 		BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */; };
@@ -40,6 +41,7 @@
 		BD1111CC24185765006FDA3E /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		BD1111CE24185850006FDA3E /* Extension+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Currency.swift"; sourceTree = "<group>"; };
 		BD1111D02418592C006FDA3E /* Extension+UITextField .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField .swift"; sourceTree = "<group>"; };
+		BD1111D92419ABE8006FDA3E /* CustomerInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CustomerInfo.plist; sourceTree = "<group>"; };
 		BD7127182411B47E0082761B /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		BD1111D824198CF3006FDA3E /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				BD96C4C824149ADE002772BB /* Exceptions.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
 		BDD9AAA42410E69600DB5C2F = {
 			isa = PBXGroup;
 			children = (
@@ -121,17 +131,18 @@
 				BD1111D7241877FC006FDA3E /* Repository */,
 				BDD9AAB02410E69600DB5C2F /* AppDelegate.swift */,
 				BDD9AAB22410E69600DB5C2F /* SceneDelegate.swift */,
-				BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */,
 				BDD9AAB62410E69600DB5C2F /* Main.storyboard */,
 				BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */,
-				BD7127182411B47E0082761B /* CustomerListTableViewController.swift */,
-				BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */,
 				BDFE34BF2415023100A42184 /* LoginViewController.swift */,
-				BD1111CB2418573F006FDA3E /* Extensions */,
-				BD96C4C824149ADE002772BB /* Exceptions.swift */,
+				BD7127182411B47E0082761B /* CustomerListTableViewController.swift */,
+				BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */,
 				BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */,
+				BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */,
+				BD1111CB2418573F006FDA3E /* Extensions */,
+				BD1111D824198CF3006FDA3E /* Exceptions */,
 				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
 				BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */,
+				BD1111D92419ABE8006FDA3E /* CustomerInfo.plist */,
 			);
 			path = C0780996_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 				BDD9AABD2410E69A00DB5C2F /* LaunchScreen.storyboard in Resources */,
 				BDD9AABA2410E69A00DB5C2F /* Assets.xcassets in Resources */,
 				BDD9AAB82410E69600DB5C2F /* Main.storyboard in Resources */,
+				BD1111DA2419ABE8006FDA3E /* CustomerInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

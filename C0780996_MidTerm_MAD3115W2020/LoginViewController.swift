@@ -33,44 +33,56 @@ class LoginViewController: UIViewController
                 txtPassword.text = pw
             }
     }
+    
+    
+   
+                        
     @IBAction func btnLogin(_ sender: Any)
     {
-        
-        if (txtName.text == "" || txtPassword.text == "")
-            {
-          let alertController = UIAlertController(title: "Error", message: "Username/Password cannot be left blank", preferredStyle: .alert)
-          alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-          self.present(alertController, animated: true, completion: nil)
-            }
-
-        let customers = DataRepository.getInstance().dictionaryToArray()
-        
-        for i in customers
+        let userName = self.txtName.text!
+        let password = self.txtPassword.text!
+        if (userName == "" || password == "")
         {
-            if (txtName.text == i.userName && txtPassword.text == i.password)
+            let alertController = UIAlertController(title: "Error", message: "Username/Password cannot be left blank", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertController, animated: true, completion: nil)
+        }
+            if let plist = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
             {
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let CustomerListTableVC = sb.instantiateViewController(identifier: "customerListTableVC") as! CustomerListTableViewController
-                navigationController?.pushViewController(CustomerListTableVC, animated: true)
-
-                if swchRememberMe.isOn
+                if let dict = NSDictionary(contentsOfFile: plist)
+                {
+                 if let customers = dict["customers"] as? [[String:Any]]
+                 {
+                  for customer in customers
+                  {
+                   if ((userName == (customer["Email"] as! String)) && (password == (customer["password"] as! String)))
                     {
-                    let defaults = UserDefaults.standard
+                        let sb = UIStoryboard(name: "Main", bundle: nil)
+                        let CustomerListTableVC = sb.instantiateViewController(identifier: "customerListTableVC") as! CustomerListTableViewController
+                        navigationController?.pushViewController(CustomerListTableVC, animated: true)
+                        
+                      if swchRememberMe.isOn
+                      {
+                        let defaults = UserDefaults.standard
                         _ = defaults.set(txtName.text, forKey: "name")
                         _ = defaults.set(txtPassword.text, forKey: "password")
+                      }
+                                              
+                    else
+                    {
+                      UserDefaults.standard.removeObject(forKey: "name")
+                      UserDefaults.standard.removeObject(forKey: "password")
                     }
-                    
-                else{
-                    UserDefaults.standard.removeObject(forKey: "name")
-                    UserDefaults.standard.removeObject(forKey: "password")
-                }
-                return
-            }
-        }
-                let alertController = UIAlertController(title: "Error", message: "Incorrect username/password", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                self.present(alertController, animated: true, completion: nil)
+                      return
+                    }
+    
+                  }
+                    let alertController = UIAlertController(title: "Error", message: "Incorrect username/password", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                    self.present(alertController, animated: true, completion: nil)
                       
+                }
+               }
+        }
     }
-}
-
+ }

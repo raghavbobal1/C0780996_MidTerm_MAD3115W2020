@@ -13,11 +13,11 @@ public class Mobile: Bill
     private var planName: String
     private var mobileNumber: String
     private var mobileDataUsed: Double
-    private var callMinutesUsed: Double
+    private var callMinutesUsed: Int
     var type: BillType = BillType.Mobile
 
     
-     init(billId: Int, billDate: Date, billType: BillType,mobileManufacturerName: String, planName: String, mobileNumber: String, mobileDataUsed: Double, callMinutesUsed: Double)
+     init(billId: Int, billDate: Date, billType: BillType,mobileManufacturerName: String, planName: String, mobileNumber: String, mobileDataUsed: Double, callMinutesUsed: Int)
     {
            self.mobileManufacturerName = mobileManufacturerName
            self.planName = planName
@@ -30,7 +30,7 @@ public class Mobile: Bill
     override func billCalculation() -> Double
     {
         var monthlyBill: Double = 0.0
-        var minutePrice: Double = 0.0
+        var minutePrice: Int = 0
         var dataPrice: Double = 0.0
         
          if (callMinutesUsed < 300)
@@ -43,7 +43,7 @@ public class Mobile: Bill
            }
          else
            {
-            minutePrice = 0.15 * callMinutesUsed
+            minutePrice = Int(0.15 * Double(callMinutesUsed))
            }
         
          if (mobileDataUsed < 5)
@@ -59,7 +59,7 @@ public class Mobile: Bill
                 dataPrice = 9.75 * mobileDataUsed
            }
         
-        monthlyBill = minutePrice + dataPrice
+        monthlyBill = Double(minutePrice) + dataPrice
         return monthlyBill
         
     }
