@@ -1,10 +1,4 @@
-//
-//  Internet.swift
-//  C0780996_MidTerm_MAD3115W2020
-//
-//  Created by Raghav Bobal on 2020-03-10.
-//  Copyright © 2020 com.lambton. All rights reserved.
-//
+
 
 import Foundation
 public class Internet: Bill
@@ -13,11 +7,12 @@ public class Internet: Bill
     private var internetGbUsed: Double
     var type: BillType = BillType.Internet
 
-    init(billId: Int, billDate: Date, billType: BillType, providerName: String, internetGbUsed: Double)
+    init(billId: String, billDate: Date, billType: BillType, providerName: String, internetGbUsed: Double)
     {
            self.providerName = providerName
            self.internetGbUsed = internetGbUsed
            super.init(billId: billId, billDate: billDate, billType: billType)
+           self.totalBillAmount = billCalculation()
     }
     
    

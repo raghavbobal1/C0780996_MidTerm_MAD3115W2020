@@ -1,10 +1,3 @@
-//
-//  Customer.swift
-//  C0769778_MidTerm_MAD3115W2020
-//
-//  Created by MacStudent on 2020-03-05.
-//  Copyright © 2020 com.lambton. All rights reserved.
-//
 
 import Foundation
 import UIKit
@@ -18,6 +11,8 @@ class Customer
     var password: String?
     var mobileNumber: String
     var dob: String?
+    var customerBills = [String: Bill]()
+    var allTotal: Double = 0.0
 
     init(customerId: String, name: String, email: String, userName: String, password: String,mobileNumber: String,dob:String?)
     {
@@ -40,7 +35,7 @@ class Customer
       var allTotal = 0.0
       for i in customerBills
       {
-        allTotal += i.value.billTotal
+        allTotal += i.value.totalBillAmount
       }
       return allTotal
     }

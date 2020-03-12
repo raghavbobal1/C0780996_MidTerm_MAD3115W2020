@@ -1,10 +1,4 @@
-//
-//  Mobile.swift
-//  C0780996_MidTerm_MAD3115W2020
-//
-//  Created by Raghav Bobal on 2020-03-10.
-//  Copyright © 2020 com.lambton. All rights reserved.
-//
+
 
 import Foundation
 public class Mobile: Bill
@@ -17,7 +11,7 @@ public class Mobile: Bill
     var type: BillType = BillType.Mobile
 
     
-     init(billId: Int, billDate: Date, billType: BillType,mobileManufacturerName: String, planName: String, mobileNumber: String, mobileDataUsed: Double, callMinutesUsed: Int)
+     init(billId: String, billDate: Date, billType: BillType,mobileManufacturerName: String, planName: String, mobileNumber: String, mobileDataUsed: Double, callMinutesUsed: Int)
     {
            self.mobileManufacturerName = mobileManufacturerName
            self.planName = planName
@@ -25,6 +19,8 @@ public class Mobile: Bill
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
            super.init(billId: billId, billDate: billDate, billType: billType)
+           self.totalBillAmount = billCalculation()
+           
     }
 
     override func billCalculation() -> Double

@@ -1,11 +1,3 @@
-//
-//  Hydro.swift
-//  C0780996_MidTerm_MAD3115W2020
-//
-//  Created by Raghav Bobal on 2020-03-10.
-//  Copyright © 2020 com.lambton. All rights reserved.
-//
-
 import Foundation
 public class Hydro: Bill
 {
@@ -13,12 +5,12 @@ public class Hydro: Bill
     private var unitsConsumed: Double
     var type: BillType = BillType.Hydro
 
-    init(billId: Int, billDate: Date, billType: BillType,agencyName: String, unitsConsumed: Double)
+    init(billId: String, billDate: Date, billType: BillType,agencyName: String, unitsConsumed: Double)
       {
            self.agencyName = agencyName
            self.unitsConsumed = unitsConsumed
-        super.init(billId: billId, billDate: billDate, billType: billType)
-        
+           super.init(billId: billId, billDate: billDate, billType: billType)
+           self.totalBillAmount = billCalculation()
       }
     
     override func billCalculation() -> Double
