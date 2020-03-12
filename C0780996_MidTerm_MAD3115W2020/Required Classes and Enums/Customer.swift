@@ -30,4 +30,28 @@ class Customer
         self.dob = dob
     }
     
+    func newBill(bill: Bill, billId: String)
+        {
+          customerBills.updateValue(bill, forKey: billId)
+        }
+    
+    func billTotal() -> Double
+    {
+      var allTotal = 0.0
+      for i in customerBills
+      {
+        allTotal += i.value.billTotal
+      }
+      return allTotal
+    }
+    
+    func getBills() -> [Bill]
+    {
+        var bills = [Bill]()
+        for i in customerBills
+        {
+            bills.append(i.value)
+        }
+        return bills
+    }
 }

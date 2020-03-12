@@ -16,7 +16,8 @@
 		BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CC24185765006FDA3E /* Extension+Date.swift */; };
 		BD1111CF24185850006FDA3E /* Extension+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111CE24185850006FDA3E /* Extension+Currency.swift */; };
 		BD1111D12418592C006FDA3E /* Extension+UITextField .swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111D02418592C006FDA3E /* Extension+UITextField .swift */; };
-		BD1111DA2419ABE8006FDA3E /* CustomerInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD1111D92419ABE8006FDA3E /* CustomerInfo.plist */; };
+		BD1111DC2419BF11006FDA3E /* infoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1111DB2419BF11006FDA3E /* infoStorage.swift */; };
+		BD1111DE2419C1B2006FDA3E /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD1111DD2419C1B2006FDA3E /* UserInfo.plist */; };
 		BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7127182411B47E0082761B /* CustomerListTableViewController.swift */; };
 		BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */; };
 		BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */; };
@@ -28,7 +29,6 @@
 		BDD9AABD2410E69A00DB5C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD9AABB2410E69A00DB5C2F /* LaunchScreen.storyboard */; };
 		BDD9AAC62410EF3F00DB5C2F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAC52410EF3F00DB5C2F /* Customer.swift */; };
 		BDFE34C02415023100A42184 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE34BF2415023100A42184 /* LoginViewController.swift */; };
-		BDFE34C2241504CC00A42184 /* InfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE34C1241504CC00A42184 /* InfoStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,8 @@
 		BD1111CC24185765006FDA3E /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		BD1111CE24185850006FDA3E /* Extension+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Currency.swift"; sourceTree = "<group>"; };
 		BD1111D02418592C006FDA3E /* Extension+UITextField .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField .swift"; sourceTree = "<group>"; };
-		BD1111D92419ABE8006FDA3E /* CustomerInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CustomerInfo.plist; sourceTree = "<group>"; };
+		BD1111DB2419BF11006FDA3E /* infoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoStorage.swift; sourceTree = "<group>"; };
+		BD1111DD2419C1B2006FDA3E /* UserInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		BD7127182411B47E0082761B /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		BD857FC924144A8B00E2634F /* AddNewCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCustomerViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		BDD9AABE2410E69A00DB5C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD9AAC52410EF3F00DB5C2F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		BDFE34BF2415023100A42184 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BDFE34C1241504CC00A42184 /* InfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		BD1111D7241877FC006FDA3E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				BDFE34C1241504CC00A42184 /* InfoStorage.swift */,
+				BD1111DB2419BF11006FDA3E /* infoStorage.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 				BD1111CB2418573F006FDA3E /* Extensions */,
 				BD1111D824198CF3006FDA3E /* Exceptions */,
 				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
+				BD1111DD2419C1B2006FDA3E /* UserInfo.plist */,
 				BDD9AAB92410E69A00DB5C2F /* Assets.xcassets */,
-				BD1111D92419ABE8006FDA3E /* CustomerInfo.plist */,
 			);
 			path = C0780996_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 				BDD9AABD2410E69A00DB5C2F /* LaunchScreen.storyboard in Resources */,
 				BDD9AABA2410E69A00DB5C2F /* Assets.xcassets in Resources */,
 				BDD9AAB82410E69600DB5C2F /* Main.storyboard in Resources */,
-				BD1111DA2419ABE8006FDA3E /* CustomerInfo.plist in Resources */,
+				BD1111DE2419C1B2006FDA3E /* UserInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +221,6 @@
 			files = (
 				BDFE34C02415023100A42184 /* LoginViewController.swift in Sources */,
 				BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */,
-				BDFE34C2241504CC00A42184 /* InfoStorage.swift in Sources */,
 				BD1111C824183BC9006FDA3E /* Mobile.swift in Sources */,
 				BD96C4C924149ADE002772BB /* Exceptions.swift in Sources */,
 				BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */,
@@ -229,6 +228,7 @@
 				BD857FC7241449DC00E2634F /* ShowBillDetailsViewController.swift in Sources */,
 				BD1111D12418592C006FDA3E /* Extension+UITextField .swift in Sources */,
 				BD7127192411B47E0082761B /* CustomerListTableViewController.swift in Sources */,
+				BD1111DC2419BF11006FDA3E /* infoStorage.swift in Sources */,
 				BD1111C0241839B8006FDA3E /* Bill.swift in Sources */,
 				BD1111C2241839D4006FDA3E /* BillType.swift in Sources */,
 				BDD9AAB12410E69600DB5C2F /* AppDelegate.swift in Sources */,

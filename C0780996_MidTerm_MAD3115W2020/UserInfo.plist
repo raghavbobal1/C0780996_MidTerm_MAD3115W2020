@@ -2,30 +2,36 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Customers</key>
+	<key>Users</key>
 	<array>
 		<dict>
-			<key>customerID</key>
-			<string>001</string>
-			<key>customerEmail</key>
+			<key>userId</key>
+			<integer>1</integer>
+			<key>userEmail</key>
 			<string>udaybhai@gmail.com</string>
-			<key>customerPassword</key>
+			<key>userName</key>
+			<string>uday</string>
+			<key>password</key>
 			<string>uday123</string>
 		</dict>
 		<dict>
-			<key>customerID</key>
-			<string>002</string>
-			<key>customerEmail</key>
+			<key>userId</key>
+			<integer>2</integer>
+			<key>userEmail</key>
 			<string>majnu@gmail.com</string>
-			<key>customerPassword</key>
+			<key>userName</key>
+			<string>majju</string>
+			<key>password</key>
 			<string>majnu123</string>
 		</dict>
 		<dict>
-			<key>customerID</key>
-			<string>003</string>
-			<key>customerEmail</key>
+			<key>userId</key>
+			<integer>3</integer>
+			<key>userEmail</key>
 			<string>ggk@gmail.com</string>
-			<key>customerPassword</key>
+			<key>userName</key>
+			<string>ggk</string>
+			<key>password</key>
 			<string>ggk123</string>
 		</dict>
 	</array>
