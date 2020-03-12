@@ -75,6 +75,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GO-gS-BqW"/>
+                                    <segue destination="Zjb-kS-KZP" kind="show" identifier="userProfile" id="n0x-Ju-l8M"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All rights reserved since 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-11-HmD">
@@ -90,9 +91,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="vBK-Dg-LBy"/>
                     <connections>
-                        <outlet property="swchRememberMe" destination="6J5-ZK-ybd" id="IB1-Gk-mDg"/>
+                        <outlet property="switchRememberMe" destination="6J5-ZK-ybd" id="9eD-dT-Vke"/>
                         <outlet property="txtName" destination="Gzo-1x-VjS" id="T18-Vc-JhS"/>
-                        <outlet property="txtPassword" destination="LDG-JT-GFZ" id="ZVH-NG-u1W"/>
+                        <outlet property="txtUserPassword" destination="LDG-JT-GFZ" id="dWY-D8-zqx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
