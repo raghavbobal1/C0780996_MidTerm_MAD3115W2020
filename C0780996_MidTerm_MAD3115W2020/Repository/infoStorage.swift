@@ -49,9 +49,9 @@ func loadData()
     var hy3 = Hydro(billId: "hy3", billDate: formatter.date(from: "27/10/2019")!, billType: BillType.Hydro, agencyName: "Ontario Hydro", unitsConsumed: 897)
 
     //Customer Class Obects
-    let c1 =  Customer(customerId: "001", name: "Uday Shetty", email: "udaybhai@gmail.com", userName: "uday", password: "uday123", mobileNumber: "6479370707", dob: "20/12/2012")
-    let c2 =  Customer(customerId: "002", name: "Sagar Pandey", email: "majnu@gmail.com", userName: "Majju", password: "majnu123", mobileNumber: "1234567890", dob: "20/12/2012")
-    let c3 =  Customer(customerId: "003", name: "Guru Gulab Khatri", email: "ggk@gmail.com", userName: "ggk",password: "ggk123", mobileNumber: "7767676767", dob: "20/12/202")
+    let c1 =  Customer(customerId: "001", name: "Uday Shetty", email: "udaybhai@gmail.com", userName: "uday", password: "uday123", mobileNumber: "6479370707", dob: "20/12/1987")
+    let c2 =  Customer(customerId: "002", name: "Sagar Pandey", email: "majnu@gmail.com", userName: "Majju", password: "majnu123", mobileNumber: "4166144664", dob: "20/12/1967")
+    let c3 =  Customer(customerId: "003", name: "Guru Gulab Khatri", email: "guru@gmail.com", userName: "ggk",password: "ggk123", mobileNumber: "6478579909", dob: "20/12/1997")
      
         // adding bills for customera
         c1.newBill(bill: m1, billId: "mob1")

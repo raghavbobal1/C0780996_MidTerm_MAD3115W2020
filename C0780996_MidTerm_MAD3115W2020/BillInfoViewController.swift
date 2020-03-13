@@ -16,11 +16,10 @@ class BillInfoViewController: UIViewController
         
         self.bills = customerBill!.getBills()
         self.lblTotalAmount.text = String(format:"$%.2f", (customerBill?.billTotal())!)
-        lblTotalAmount.font = lblTotalAmount.font.withSize(30.0)
-        lblTotalAmount.textColor = UIColor.white
+        lblTotalAmount.font = lblTotalAmount.font.withSize(20.0)
         lblTotalAmount.textAlignment = .center
         self.addNewBillButton()
-        lblBckGrnd.backgroundColor = UIColor .systemBlue
+       
     }
     
     private func addNewBillButton()
@@ -70,7 +69,7 @@ extension BillInfoViewController: UITableViewDataSource,
           cell.lblBillDate?.text = billList.billDate.getFormattedDate()
           cell.imgIcon.image = UIImage(named:"mobileIcon")
           cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculation())
-          cell.backgroundColor = UIColor(red:0.97, green:0.84, blue:1.00, alpha:1.0)
+          cell.backgroundColor = UIColor(red:0.99, green:0.81, blue:0.81, alpha:1.0)
         }
            
         if billList.billId.contains("hy")
@@ -88,13 +87,13 @@ extension BillInfoViewController: UITableViewDataSource,
          cell.lblBillDate?.text = billList.billDate.getFormattedDate()
          cell.imgIcon.image = UIImage(named:"internetIcon")
          cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculation())
-         cell.backgroundColor = UIColor(red:0.66, green:0.98, blue:1.00, alpha:1.0)
-         }
+         cell.backgroundColor = UIColor(red:0.83, green:0.99, blue:0.81, alpha:1.0)
+        }
           return cell
     }
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
         {
-            return CGFloat(100.0)
+            return CGFloat(130.0)
         }
  }
 
