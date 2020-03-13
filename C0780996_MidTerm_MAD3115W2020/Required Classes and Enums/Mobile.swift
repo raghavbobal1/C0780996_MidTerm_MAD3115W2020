@@ -23,7 +23,7 @@ public class Mobile: Bill
            
     }
 
-     override func billCalculation() -> Double
+      func billCalculation() -> Double
     {
         var monthlyBill: Double = 0.0
         var minutePrice: Int = 0

@@ -13,7 +13,7 @@ public class Hydro: Bill
            self.totalBillAmount = billCalculation()
       }
     
-    override func billCalculation() -> Double
+     func billCalculation() -> Double
     {
         var price:Double=0.0
         var hydroAmt:Double=0.0
