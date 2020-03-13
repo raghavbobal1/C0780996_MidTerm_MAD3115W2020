@@ -21,5 +21,18 @@ class BillInfoViewController: UIViewController
         lblTotalAmount.textAlignment = .center
         lblBckGrnd.backgroundColor = UIColor.systemBlue
     }
-
+    
+    private func addNewBillButton()
+    {
+        let newCustomerButton = UIBarButtonItem(title: "Add Bill", style: .plain, target: self, action: #selector(self.addNewBill))
+        self.navigationItem.rightBarButtonItem = newCustomerButton
+    }
+    
+    @objc func addNewBill()
+    {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let addNewBillVC = sb.instantiateViewController(identifier: "addNewBillVC") as! AddNewBillViewController
+        addNewBillVC.selectedCustomer = self.customerBill
+        navigationController?.pushViewController(addNewBillVC, animated: true)
+    }
 }
