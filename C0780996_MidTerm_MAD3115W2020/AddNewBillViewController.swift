@@ -42,7 +42,7 @@ class AddNewBillViewController: UIViewController
     @IBAction func btnAddBill(_ sender: Any) {
         if (segmentBilltype.selectedSegmentIndex == 0){
             if(Validations.mobileNumber(number: txtMobNumber.text!) == true){
-                if((txtBillId.text?.contains("MB"))!)
+                if((txtBillId.text?.contains("mob"))!)
                 {
                     let billObj = Mobile(billId: txtBillId.text!, billDate:  (txtBillDate.text?.toDate())!, billType: BillType.Mobile
                     ,mobileManufacturerName: txtMobManufacturer.text!, planName: txtMobPlan!.text!, mobileNumber: txtMobNumber!.text!, mobileDataUsed: Double(txtMobData!.text!)!, callMinutesUsed: Int(txtMobMins!.text!)!)
@@ -62,7 +62,7 @@ class AddNewBillViewController: UIViewController
             return
         }
         if(segmentBilltype.selectedSegmentIndex == 1){
-            if((txtBillId.text?.contains("HY"))!){
+            if((txtBillId.text?.contains("hy"))!){
                 let billObj = Hydro(billId: txtBillId.text!, billDate:  (txtBillDate.text?.toDate())!, billType: BillType.Hydro, agencyName: txtHydAgency!.text!, unitsConsumed: Double(txtHydUnits!.text!)!)
             selectedCustomer?.newBill(bill: billObj, billId: txtBillId.text!)
             billSuccess()
@@ -75,13 +75,13 @@ class AddNewBillViewController: UIViewController
             }
         }
         if(segmentBilltype.selectedSegmentIndex == 2){
-            if((txtBillId.text?.contains("IN"))!){
+            if((txtBillId.text?.contains("in"))!){
                 let billObj = Internet(billId: txtBillId.text!, billDate:  (txtBillDate.text?.toDate())!, billType: BillType.Internet, providerName: txtIntProvider!.text!, internetGbUsed: Double(txtIntData!.text!) as! Double)
             selectedCustomer?.newBill(bill: billObj, billId: txtBillId.text!)
             billSuccess()
             }
             else {
-                let alertController = UIAlertController(title:"Error", message: "Bill ID must contain IN", preferredStyle: .alert)
+                let alertController = UIAlertController(title:"Error", message: "Bill ID must contain in", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
                 self.present(alertController, animated: true, completion: nil)
                 return
@@ -116,8 +116,8 @@ class AddNewBillViewController: UIViewController
     self.txtMobManufacturer.isHidden = true
     }
     func initialSetting(){
-        self.txtHydUnits.isHidden = true;
-        self.txtHydAgency.isHidden = true;
+        self.txtHydUnits.isHidden = true
+        self.txtHydAgency.isHidden = true
         self.txtIntData.isHidden = true
         self.txtIntProvider.isHidden = true
         self.txtMobMins.isHidden = false
