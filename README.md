@@ -14,3 +14,5 @@ Part #1 - Edit launchScreen, implement proper login/logout, display a list of cu
 # REFERENCES
 * [Stackoverflow.com](https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift) - Used for email validation and exception handling for email.
 * [Git Hub](https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314) - Used for mobile number validation and exception handling for mobile number.
+* [Plist](https://learnappmaking.com/plist-property-list-swift-how-to/)- Used for adding and using Plists.
+* [Date Picker](https://stackoverflow.com/questions/48109663/cant-set-a-converted-date-from-string-as-minimum-date-in-datepicker)- helped with adding date picker.
