@@ -567,7 +567,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-d3-3Bp">
-                                <rect key="frame" x="20" y="223" width="374" height="32"/>
+                                <rect key="frame" x="20" y="223.33333333333334" width="367.66666666666669" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="HYDRO"/>
@@ -581,7 +581,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nt-Sf-hCx">
-                                <rect key="frame" x="164" y="181" width="86" height="21"/>
+                                <rect key="frame" x="164" y="181.33333333333334" width="79.666666666666686" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="vDI-n8-zvM"/>
                                 </constraints>
@@ -595,15 +595,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BILL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-bc-9nB">
-                                <rect key="frame" x="92" y="353" width="230" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-Y1-ZMc">
-                                <rect key="frame" x="152" y="304.66666666666669" width="110" height="17.333333333333314"/>
+                                <rect key="frame" x="116" y="305" width="168" height="17"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="BILL DETAILS">
+                                    <fragment content="ENTER BILL DETAILS">
                                         <attributes>
                                             <font key="NSFont" size="15" name="AmericanTypewriter-Semibold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -613,33 +608,67 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BILL DATE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3z-h2-YLY">
-                                <rect key="frame" x="92" y="410" width="230" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BILL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-bc-9nB">
+                                <rect key="frame" x="92" y="368" width="230" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PROVIDER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VB5-MD-Ku7">
-                                <rect key="frame" x="92" y="465" width="230" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BILL DATE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3z-h2-YLY">
+                                <rect key="frame" x="92" y="416" width="230" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DATA USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9T-k7-jI3">
-                                <rect key="frame" x="92" y="522" width="230" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MOBILE PROVIDER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VB5-MD-Ku7">
+                                <rect key="frame" x="92" y="469" width="230" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MOBILE NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F3R-rx-GNX">
-                                <rect key="frame" x="92" y="578" width="229" height="34"/>
+                                <rect key="frame" x="92" y="577" width="229" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MINUTES USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMp-aS-zrk">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MOBILE MINUTES USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMp-aS-zrk">
                                 <rect key="frame" x="92" y="691" width="230" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-Z0-qjQ">
-                                <rect key="frame" x="152" y="767" width="110" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MOBILE DATA USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zw-4T-NGQ">
+                                <rect key="frame" x="92" y="521" width="230" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MOBILE PLAN NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDM-ES-akJ">
+                                <rect key="frame" x="91" y="632" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="INTERNET PROVIDER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bf0-ip-YQo">
+                                <rect key="frame" x="92" y="469" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="INTERNET DATA USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9T-k7-jI3">
+                                <rect key="frame" x="92" y="521" width="230" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HYDRO PROVIDER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdK-ay-Pxb">
+                                <rect key="frame" x="92" y="468" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HYDRO UNITS USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMZ-ci-9Xe">
+                                <rect key="frame" x="92" y="520" width="230" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-Z0-qjQ">
+                                <rect key="frame" x="152" y="761" width="110" height="30"/>
                                 <color key="backgroundColor" red="0.14115235209999999" green="0.251211077" blue="0.72592228650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal">
@@ -656,11 +685,6 @@
                                     <action selector="btnAddBill:" destination="0o2-Ux-6XR" eventType="touchUpInside" id="zYe-te-gFa"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DATA USED" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zw-4T-NGQ">
-                                <rect key="frame" x="92" y="637" width="230" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92148774860000005" green="0.92162030939999995" blue="0.92145884040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -668,27 +692,24 @@
                             <constraint firstItem="VB5-MD-Ku7" firstAttribute="trailing" secondItem="L9T-k7-jI3" secondAttribute="trailing" id="4Ab-Br-H56"/>
                             <constraint firstItem="3nt-Sf-hCx" firstAttribute="centerX" secondItem="6K2-d3-3Bp" secondAttribute="centerX" id="4Tj-Rl-RNq"/>
                             <constraint firstItem="L9T-k7-jI3" firstAttribute="leading" secondItem="8Zw-4T-NGQ" secondAttribute="leading" id="7cW-CC-6O8"/>
-                            <constraint firstItem="rFY-Y1-ZMc" firstAttribute="top" secondItem="6K2-d3-3Bp" secondAttribute="bottom" constant="50.666666666666742" id="8tV-2o-bqc"/>
                             <constraint firstItem="7UE-bc-9nB" firstAttribute="leading" secondItem="D3z-h2-YLY" secondAttribute="leading" id="8zF-jc-2DA"/>
                             <constraint firstItem="G0C-Z0-qjQ" firstAttribute="top" secondItem="kMp-aS-zrk" secondAttribute="bottom" constant="42" id="ATE-98-OL5"/>
                             <constraint firstItem="L9T-k7-jI3" firstAttribute="top" secondItem="VB5-MD-Ku7" secondAttribute="bottom" constant="23" id="BIl-CH-bii"/>
-                            <constraint firstItem="rFY-Y1-ZMc" firstAttribute="trailing" secondItem="G0C-Z0-qjQ" secondAttribute="trailing" id="CVC-nD-kXL"/>
                             <constraint firstItem="G0C-Z0-qjQ" firstAttribute="centerX" secondItem="jEV-Pi-Va2" secondAttribute="centerX" id="CcR-sp-sul"/>
                             <constraint firstItem="6K2-d3-3Bp" firstAttribute="top" secondItem="3nt-Sf-hCx" secondAttribute="bottom" constant="21" id="DTm-OQ-y9d"/>
                             <constraint firstItem="F3R-rx-GNX" firstAttribute="trailing" secondItem="8Zw-4T-NGQ" secondAttribute="trailing" id="DhC-cC-iAj"/>
+                            <constraint firstItem="7UE-bc-9nB" firstAttribute="top" secondItem="rFY-Y1-ZMc" secondAttribute="bottom" constant="31" id="FVJ-Ge-cAc"/>
                             <constraint firstItem="kMp-aS-zrk" firstAttribute="leading" secondItem="9bq-xO-z88" secondAttribute="leading" constant="92" id="Jha-5J-tyL"/>
-                            <constraint firstItem="7UE-bc-9nB" firstAttribute="top" secondItem="rFY-Y1-ZMc" secondAttribute="bottom" constant="30.999999999999943" id="Jtq-oH-5qh"/>
                             <constraint firstItem="kMp-aS-zrk" firstAttribute="trailing" secondItem="8Zw-4T-NGQ" secondAttribute="trailing" id="L42-q9-6tx"/>
                             <constraint firstItem="3nt-Sf-hCx" firstAttribute="leading" secondItem="9bq-xO-z88" secondAttribute="leading" constant="164" id="Rjc-xH-bnw"/>
                             <constraint firstItem="kMp-aS-zrk" firstAttribute="leading" secondItem="8Zw-4T-NGQ" secondAttribute="leading" id="Woz-Ab-8J3"/>
+                            <constraint firstItem="rFY-Y1-ZMc" firstAttribute="leading" secondItem="9bq-xO-z88" secondAttribute="leading" constant="116" id="Xxx-31-rA5"/>
                             <constraint firstItem="D3z-h2-YLY" firstAttribute="leading" secondItem="VB5-MD-Ku7" secondAttribute="leading" id="Ysq-s7-57H"/>
-                            <constraint firstItem="rFY-Y1-ZMc" firstAttribute="leading" secondItem="G0C-Z0-qjQ" secondAttribute="leading" id="YwV-9G-zgY"/>
                             <constraint firstItem="D3z-h2-YLY" firstAttribute="leading" secondItem="L9T-k7-jI3" secondAttribute="leading" id="ZNw-29-mek"/>
                             <constraint firstItem="F3R-rx-GNX" firstAttribute="top" secondItem="L9T-k7-jI3" secondAttribute="bottom" constant="22" id="ZpE-GI-2TI"/>
                             <constraint firstItem="G0C-Z0-qjQ" firstAttribute="leading" secondItem="9bq-xO-z88" secondAttribute="leading" constant="152" id="aAd-x8-xYE"/>
                             <constraint firstItem="VB5-MD-Ku7" firstAttribute="top" secondItem="D3z-h2-YLY" secondAttribute="bottom" constant="21" id="aAg-Ym-gqx"/>
                             <constraint firstItem="6K2-d3-3Bp" firstAttribute="leading" secondItem="jEV-Pi-Va2" secondAttribute="leadingMargin" id="aj3-Dc-CXO"/>
-                            <constraint firstItem="6K2-d3-3Bp" firstAttribute="centerX" secondItem="rFY-Y1-ZMc" secondAttribute="centerX" id="caR-AO-7Jx"/>
                             <constraint firstItem="9bq-xO-z88" firstAttribute="bottom" secondItem="G0C-Z0-qjQ" secondAttribute="bottom" constant="65" id="dKM-Av-w8o"/>
                             <constraint firstItem="Czf-CJ-gmM" firstAttribute="top" secondItem="9bq-xO-z88" secondAttribute="top" constant="45" id="dnB-9w-j3a"/>
                             <constraint firstItem="L9T-k7-jI3" firstAttribute="leading" secondItem="F3R-rx-GNX" secondAttribute="leading" id="dua-aV-VHF"/>
@@ -698,8 +719,10 @@
                             <constraint firstItem="D3z-h2-YLY" firstAttribute="trailing" secondItem="VB5-MD-Ku7" secondAttribute="trailing" id="g32-3B-XvM"/>
                             <constraint firstItem="Czf-CJ-gmM" firstAttribute="leading" secondItem="9bq-xO-z88" secondAttribute="leading" constant="80" id="naw-Sy-Ya4"/>
                             <constraint firstItem="8Zw-4T-NGQ" firstAttribute="top" secondItem="F3R-rx-GNX" secondAttribute="bottom" constant="25" id="ofg-Bq-ci2"/>
+                            <constraint firstItem="9bq-xO-z88" firstAttribute="trailing" secondItem="rFY-Y1-ZMc" secondAttribute="trailing" constant="130" id="s3l-Cg-4j5"/>
                             <constraint firstItem="D3z-h2-YLY" firstAttribute="top" secondItem="7UE-bc-9nB" secondAttribute="bottom" constant="23" id="wWI-Tw-L9i"/>
                             <constraint firstItem="7UE-bc-9nB" firstAttribute="trailing" secondItem="D3z-h2-YLY" secondAttribute="trailing" id="wYD-3V-VRM"/>
+                            <constraint firstItem="rFY-Y1-ZMc" firstAttribute="top" secondItem="6K2-d3-3Bp" secondAttribute="bottom" constant="50.666666666666657" id="yaa-cT-dD5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9bq-xO-z88"/>
                     </view>
@@ -707,11 +730,15 @@
                         <outlet property="segmentBilltype" destination="6K2-d3-3Bp" id="iBw-Dc-P0c"/>
                         <outlet property="txtBillDate" destination="D3z-h2-YLY" id="zu2-zG-ZC4"/>
                         <outlet property="txtBillId" destination="7UE-bc-9nB" id="8g8-I5-WFg"/>
-                        <outlet property="txtIntData" destination="L9T-k7-jI3" id="cRt-fV-0zX"/>
-                        <outlet property="txtIntProvider" destination="VB5-MD-Ku7" id="k9l-NE-cH6"/>
-                        <outlet property="txtMobData" destination="8Zw-4T-NGQ" id="cfg-1P-71w"/>
-                        <outlet property="txtMobMins" destination="kMp-aS-zrk" id="Hgm-2Q-01J"/>
-                        <outlet property="txtMobNumber" destination="F3R-rx-GNX" id="OY3-kS-hjJ"/>
+                        <outlet property="txtHydAgency" destination="qdK-ay-Pxb" id="S4a-nS-9YC"/>
+                        <outlet property="txtHydUnits" destination="qMZ-ci-9Xe" id="off-gl-mfD"/>
+                        <outlet property="txtIntData" destination="L9T-k7-jI3" id="Wjd-cl-Vra"/>
+                        <outlet property="txtIntProvider" destination="Bf0-ip-YQo" id="u9E-RU-cmC"/>
+                        <outlet property="txtMobData" destination="8Zw-4T-NGQ" id="Csg-yE-Wxh"/>
+                        <outlet property="txtMobManufacturer" destination="VB5-MD-Ku7" id="eLf-Rg-Qb5"/>
+                        <outlet property="txtMobMins" destination="kMp-aS-zrk" id="Yed-TE-QXs"/>
+                        <outlet property="txtMobNumber" destination="F3R-rx-GNX" id="QZl-cp-2SC"/>
+                        <outlet property="txtMobPlan" destination="BDM-ES-akJ" id="SYn-25-0sj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbw-it-gIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
