@@ -30,6 +30,7 @@
 		BDD9AAC62410EF3F00DB5C2F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9AAC52410EF3F00DB5C2F /* Customer.swift */; };
 		BDFE34C02415023100A42184 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE34BF2415023100A42184 /* LoginViewController.swift */; };
 		BDFEE596241B8D32003D12B6 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEE595241B8D32003D12B6 /* AddNewBillViewController.swift */; };
+		BDFEE598241B9260003D12B6 /* BillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEE597241B9260003D12B6 /* BillTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		BDD9AAC52410EF3F00DB5C2F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		BDFE34BF2415023100A42184 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BDFEE595241B8D32003D12B6 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
+		BDFEE597241B9260003D12B6 /* BillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				BD857FC6241449DC00E2634F /* ShowBillDetailsViewController.swift */,
 				BD1111C924184C0B006FDA3E /* BillInfoViewController.swift */,
 				BDFEE595241B8D32003D12B6 /* AddNewBillViewController.swift */,
+				BDFEE597241B9260003D12B6 /* BillTableViewCell.swift */,
 				BD1111CB2418573F006FDA3E /* Extensions */,
 				BD1111D824198CF3006FDA3E /* Exceptions */,
 				BDD9AABE2410E69A00DB5C2F /* Info.plist */,
@@ -226,6 +229,7 @@
 				BDFEE596241B8D32003D12B6 /* AddNewBillViewController.swift in Sources */,
 				BD857FCA24144A8B00E2634F /* AddNewCustomerViewController.swift in Sources */,
 				BD1111C824183BC9006FDA3E /* Mobile.swift in Sources */,
+				BDFEE598241B9260003D12B6 /* BillTableViewCell.swift in Sources */,
 				BD96C4C924149ADE002772BB /* Exceptions.swift in Sources */,
 				BD1111CD24185765006FDA3E /* Extension+Date.swift in Sources */,
 				BD1111C424183A70006FDA3E /* Hydro.swift in Sources */,

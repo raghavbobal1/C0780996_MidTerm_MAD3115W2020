@@ -435,7 +435,7 @@
                                 <rect key="frame" x="20" y="198" width="374" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="Lv4-P1-Clm" customClass="BillViewCell" customModule="C0780996_MidTerm_MAD3115W2020" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="Lv4-P1-Clm" customClass="BillTableViewCell" customModule="C0780996_MidTerm_MAD3115W2020" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lv4-P1-Clm" id="rPo-8q-wRV">
@@ -508,7 +508,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEi-46-p4V">
-                                                    <rect key="frame" x="235" y="80" width="119" height="16"/>
+                                                    <rect key="frame" x="235" y="80" width="119" height="13"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="BILLAMOUNT">
                                                             <attributes>
@@ -586,6 +586,13 @@
                                                 <constraint firstItem="XEi-46-p4V" firstAttribute="baseline" secondItem="J9Q-8Y-jgg" secondAttribute="baseline" id="zoH-Z5-nkt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgIcon" destination="Y0m-Nt-9JQ" id="jsU-Na-xfv"/>
+                                            <outlet property="lblBillAmount" destination="XEi-46-p4V" id="oSt-4j-z1H"/>
+                                            <outlet property="lblBillDate" destination="H30-dY-qir" id="H4k-Kz-bJn"/>
+                                            <outlet property="lblBillId" destination="QvA-qK-gvM" id="L2c-mG-byf"/>
+                                            <outlet property="lblBillType" destination="FaW-Y8-D8p" id="EoW-Tc-BvW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -631,8 +638,8 @@
                         <viewLayoutGuide key="safeArea" id="Og0-IU-DiH"/>
                     </view>
                     <connections>
-                        <outlet property="lblAllAmount" destination="K6N-qd-sDt" id="q97-AT-0o2"/>
-                        <outlet property="lblBackGround" destination="bLx-RX-OKz" id="PvK-k7-18v"/>
+                        <outlet property="lblBckGrnd" destination="bLx-RX-OKz" id="wmv-qL-uDb"/>
+                        <outlet property="lblTotalAmount" destination="K6N-qd-sDt" id="dzx-xF-7u8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooq-Ox-MQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
