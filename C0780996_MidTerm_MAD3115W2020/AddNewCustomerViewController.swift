@@ -12,10 +12,10 @@ class AddNewCustomerViewController: UIViewController
     @IBOutlet weak var txtNewCustomerPassword: UITextField!
     @IBOutlet weak var txtNewCustomerUserName: UITextField!
     @IBOutlet weak var txtNewCustomerDOB: UITextField!
-    
     @IBOutlet weak var dtPickerDOB: UIDatePicker!
     
-    @IBAction func btnAddNewCustomer(_ sender: Any) {
+    @IBAction func btnAddNewCustomer(_ sender: Any)
+    {
         let txtNumber = txtNewCustomerNumber.text!
         let txtmail  = txtNewCustomerEmail.text!
         
@@ -57,9 +57,9 @@ class AddNewCustomerViewController: UIViewController
         
         let alertController = UIAlertController(title: "Success", message: "Customer Added", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
-            {   action in self.dismissView()}))
+            {action in self.dismissView()}))
                 self.present(alertController, animated: true, completion: nil)
-            }
+     }
         func dismissView()
         {
             navigationController?.popViewController(animated: true)
@@ -80,8 +80,8 @@ class AddNewCustomerViewController: UIViewController
               self.txtNewCustomerDOB.text = dateformatter.string(from: datePicker.date)
           }
           self.txtNewCustomerDOB.resignFirstResponder()
-      }
-}
+        }
+  }
 
 
 
