@@ -19,3 +19,4 @@ PART #2 - Display bills of the respective customers, adding a button to add new 
 * [Date Picker](https://stackoverflow.com/questions/48109663/cant-set-a-converted-date-from-string-as-minimum-date-in-datepicker)- helped with adding date picker.
 * [GITG](https://superuser.com/questions/283309/how-to-delete-the-git-reference-refs-original-refs-heads-master) - Used to remove a git error that was causing problems in commiting and pushing the code.
 * [UI Color](https://www.uicolor.xyz/#/rgb-to-ui)- Used to set the color of the table cells.
+* [Segment Control](https://www.youtube.com/watch?v=WrHUCZf7FJA) - Used to create the segmented control for bill type.
