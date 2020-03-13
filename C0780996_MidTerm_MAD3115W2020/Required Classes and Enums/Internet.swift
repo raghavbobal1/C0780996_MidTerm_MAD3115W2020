@@ -3,8 +3,8 @@
 import Foundation
 public class Internet: Bill
 {
-    private var providerName: String
-    private var internetGbUsed: Double
+    var providerName: String
+    var internetGbUsed: Double
     var type: BillType = BillType.Internet
 
     init(billId: String, billDate: Date, billType: BillType, providerName: String, internetGbUsed: Double)
@@ -16,8 +16,8 @@ public class Internet: Bill
     }
     
    
-    override func billCalculation() -> Double
-    {
+      override func billCalculation() -> Double
+     {
         var price: Double = 0.0
           
         if (internetGbUsed < 3)
@@ -33,5 +33,5 @@ public class Internet: Bill
             price = 15.15 * internetGbUsed
         }
               return price
-    }
+     }
 }

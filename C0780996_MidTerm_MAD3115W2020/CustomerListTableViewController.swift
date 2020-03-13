@@ -5,7 +5,6 @@ import UIKit
 class CustomerListTableViewController: UIViewController
 {
 
-    @IBOutlet weak var lblCustomerList: UILabel!
     @IBOutlet weak var tblViewCustomerList: UITableView!
     
     
@@ -82,4 +81,3 @@ class CustomerListTableViewController: UIViewController
         }
     }
 
-    

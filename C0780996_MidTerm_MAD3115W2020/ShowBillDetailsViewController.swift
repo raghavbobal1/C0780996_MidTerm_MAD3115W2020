@@ -32,11 +32,4 @@ class ShowBillDetailsViewController: UIViewController
         navigationController?.pushViewController(BillInfoVC, animated: true)
     }
     
-    
-  
-    
-    
 }
-        
-
-    

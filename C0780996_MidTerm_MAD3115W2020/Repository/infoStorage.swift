@@ -2,6 +2,7 @@
 import Foundation
 import UIKit
 
+//A singleton class to store all the customers details
 
 class DataRepository
 {
@@ -16,12 +17,17 @@ static func getInstance() -> DataRepository
 return repoObj
 }
     
+    // function to add customers
+    
 func addCustomer(customer: Customer)
   {
     let cid = customer.customerId
     customerDictionary.updateValue(customer, forKey: cid)
   }
 
+    
+    // function to load data
+    
 func loadData()
 {
     let formatter = DateFormatter()
@@ -32,9 +38,9 @@ func loadData()
     var m2 = Mobile(billId: "mob2", billDate:formatter.date(from: "07/07/2019")!, billType: BillType.Mobile, mobileManufacturerName: "Freedom", planName: "Business Plan", mobileNumber: "6478989998", mobileDataUsed: 8.9, callMinutesUsed: Int(999.67))
     var m3 = Mobile(billId: "mob3", billDate:formatter.date(from: "14/10/2019")!, billType: BillType.Mobile, mobileManufacturerName: "Bell", planName: "Home plan", mobileNumber: "6545656565", mobileDataUsed: 5.6, callMinutesUsed: Int(777.77))
     //Internet Class Objects
-    var it1 = Internet(billId: "in1", billDate: formatter.date(from: "21/07/2019")!, billType: BillType.Internet, providerName: "Rogers", internetGbUsed: 80.99)
-    var it2 = Internet(billId: "in2", billDate: formatter.date(from: "20/02/2019")!, billType: BillType.Internet, providerName: "Virgin", internetGbUsed: 57.87)
-    var it3 = Internet(billId: "in3", billDate: formatter.date(from: "12/07/2019")!, billType: BillType.Internet, providerName: "Bell", internetGbUsed: 88.05)
+    var in1 = Internet(billId: "in1", billDate: formatter.date(from: "21/07/2019")!, billType: BillType.Internet, providerName: "Rogers", internetGbUsed: 80.99)
+    var in2 = Internet(billId: "in2", billDate: formatter.date(from: "20/02/2019")!, billType: BillType.Internet, providerName: "Virgin", internetGbUsed: 57.87)
+    var in3 = Internet(billId: "in3", billDate: formatter.date(from: "12/07/2019")!, billType: BillType.Internet, providerName: "Bell", internetGbUsed: 88.05)
 
     //Hydro Class Objects
     var hy1 = Hydro(billId: "hy1", billDate: formatter.date(from: "13/07/2019")!, billType: BillType.Hydro, agencyName: "Toronto Hydro", unitsConsumed: 677)
@@ -46,12 +52,26 @@ func loadData()
     let c1 =  Customer(customerId: "001", name: "Uday Shetty", email: "udaybhai@gmail.com", userName: "uday", password: "uday123", mobileNumber: "6479370707", dob: "20/12/2012")
     let c2 =  Customer(customerId: "002", name: "Sagar Pandey", email: "majnu@gmail.com", userName: "Majju", password: "majnu123", mobileNumber: "1234567890", dob: "20/12/2012")
     let c3 =  Customer(customerId: "003", name: "Guru Gulab Khatri", email: "ggk@gmail.com", userName: "ggk",password: "ggk123", mobileNumber: "7767676767", dob: "20/12/202")
-    
-       addCustomer(customer: c1)
-       addCustomer(customer: c2)
-       addCustomer(customer: c3)
-    
+     
+        // adding bills for customera
+        c1.newBill(bill: m1, billId: "mob1")
+        c1.newBill(bill: hy3, billId: "hy3")
+        c1.newBill(bill: in1, billId: "in1")
+        c2.newBill(bill: hy1, billId: "hy1")
+        c2.newBill(bill: m2, billId: "mob2")
+        c3.newBill(bill: h1, billId: "HY100")
+        c3.newBill(bill: m2, billId: "MB200")
+        c3.newBill(bill: in1, billId: "IN100")
+        c3.newBill(bill: m1, billId: "MB100")
+        
+        //adding customers
+        addCustomer(customer: c1)
+        addCustomer(customer: c2)
+        addCustomer(customer: c3)
     }
+    
+    //functon for dictionary to array
+    
 func dictionaryToArray() -> [Customer]
     {
         var customerListStorage: [Customer] = []

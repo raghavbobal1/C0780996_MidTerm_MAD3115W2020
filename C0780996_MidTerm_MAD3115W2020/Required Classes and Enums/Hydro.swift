@@ -3,7 +3,7 @@ public class Hydro: Bill
 {
     private var agencyName: String
     private var unitsConsumed: Double
-    var type: BillType = BillType.Hydro
+    var billtype: BillType = BillType.Hydro
 
     init(billId: String, billDate: Date, billType: BillType,agencyName: String, unitsConsumed: Double)
       {

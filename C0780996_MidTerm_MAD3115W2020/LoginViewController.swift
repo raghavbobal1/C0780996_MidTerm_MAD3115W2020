@@ -30,6 +30,8 @@ class LoginViewController: UIViewController
                 txtUserPassword.text = pw
             }
     }
+    
+    //adding functionality for validation to the login button
                         
     @IBAction func btnLogin(_ sender: Any)
     {
@@ -53,18 +55,23 @@ class LoginViewController: UIViewController
             for user in users
              {
                if ((userName==(user["userName"] as! String))&&(password==(user["password"] as! String)))
-                    {
-                     if self.switchRememberMe.isOn
+                {
+                    let sb = UIStoryboard(name: "Main", bundle: nil)
+                    let CustomerListTableVC = sb.instantiateViewController(identifier: "customerListTableVC") as! CustomerListTableViewController
+                     navigationController?.pushViewController(CustomerListTableVC, animated: true)
+                        
+                    if self.switchRememberMe.isOn
                       {
-                        userDefault.setValue(self.txtName.text, forKey: "userEmail")
-                        userDefault.set(self.txtUserPassword.text, forKey: "userPassword")
-                      }
+                        let defaults = UserDefaults.standard
+                        _ = defaults.set(txtName.text, forKey: "name")
+                        _ = defaults.set(txtUserPassword.text, forKey: "password")
+                        }
                       else
                       {
                         userDefault.removeObject(forKey: "userName")
                         userDefault.removeObject(forKey: "userPassword")
                        }
-                        self.performSegue(withIdentifier: "userProfile", sender: nil)
+
                         loggedIn = true
                       }
                     }
@@ -87,29 +94,21 @@ class LoginViewController: UIViewController
 
     }
 
+    //function to get the remember me values
     private func getRememberMeValues()
     {
         let userDefault = UserDefaults.standard
         
-        if let email = userDefault.string(forKey: "userName")
+        if let userName = userDefault.string(forKey: "userName")
         {
-            txtName.text = email
+            txtName.text = userName
             
             if let pwd = userDefault.string(forKey: "userPassword")
             {
                 txtUserPassword.text = pwd
+                
             }
         }
     }
-    
-    @IBAction func unWindLogoutFromAnyScreen(storyboard : UIStoryboardSegue)
-    {
-        print("Logout")
-        let s = storyboard.source as! CustomerListTableViewController
-        txtName.text=""
-        txtUserPassword.text=""
-    }
-
-
 }
 

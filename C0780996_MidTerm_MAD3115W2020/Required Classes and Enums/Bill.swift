@@ -1,22 +1,23 @@
-
 import Foundation
 public class Bill
+    
 {
-    private var billId: String
-    private var billDate: Date
-    var totalBillAmount: Double = 0.0
-    private var billType: BillType
-    
-    init(billId: String, billDate: Date, billType: BillType)
+  var billId: String
+  var billDate: Date
+  var billType: BillType
+  var totalBillAmount: Double = 0.0
+
+init(billId: String, billDate: Date, billType: BillType)
     {
-        self.billId = billId
-        self.billDate = billDate
-        self.billType = billType
-        self.totalBillAmount = billCalculation()
+    self.billId = billId
+    self.billType = billType
+    self.billDate = billDate
     }
     
-    func billCalculation() -> Double
-    {
-        return 0.0
-    }
+public func billCalculate() -> Double
+ {
+    return 0.0
+ }
+    
 }
+

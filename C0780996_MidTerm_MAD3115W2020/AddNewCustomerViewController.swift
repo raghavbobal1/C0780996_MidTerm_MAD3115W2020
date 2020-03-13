@@ -13,6 +13,8 @@ class AddNewCustomerViewController: UIViewController
     @IBOutlet weak var txtNewCustomerUserName: UITextField!
     @IBOutlet weak var txtNewCustomerDOB: UITextField!
     
+    @IBOutlet weak var dtPickerDOB: UIDatePicker!
+    
     @IBAction func btnAddNewCustomer(_ sender: Any) {
         let txtNumber = txtNewCustomerNumber.text!
         let txtmail  = txtNewCustomerEmail.text!
@@ -62,11 +64,23 @@ class AddNewCustomerViewController: UIViewController
         {
             navigationController?.popViewController(animated: true)
         }
-            override func viewDidLoad()
+    
+        override func viewDidLoad()
         {
             super.viewDidLoad()
+            self.txtNewCustomerDOB.setInputViewDatePicker(target: self, selector: #selector(tapDone))
         }
-
+      
+      @objc func tapDone()
+      {
+        if let datePicker = self.txtNewCustomerDOB.inputView as? UIDatePicker
+        {
+              let dateformatter = DateFormatter()
+              dateformatter.dateStyle = .medium
+              self.txtNewCustomerDOB.text = dateformatter.string(from: datePicker.date)
+          }
+          self.txtNewCustomerDOB.resignFirstResponder()
+      }
 }
 
 

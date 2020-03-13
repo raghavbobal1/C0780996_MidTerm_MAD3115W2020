@@ -1,4 +1,3 @@
-
 import Foundation
 import UIKit
 
@@ -11,8 +10,8 @@ class Customer
     var password: String?
     var mobileNumber: String
     var dob: String?
-    var customerBills = [String: Bill]()
-    var allTotal: Double = 0.0
+    lazy var customerBills = [String:Bill]()
+    var totalBillAmount: Double = 0.0
 
     init(customerId: String, name: String, email: String, userName: String, password: String,mobileNumber: String,dob:String?)
     {
@@ -36,8 +35,9 @@ class Customer
       for i in customerBills
       {
         allTotal += i.value.totalBillAmount
+        
       }
-      return allTotal
+        return allTotal
     }
     
     func getBills() -> [Bill]
@@ -50,3 +50,4 @@ class Customer
         return bills
     }
 }
+
