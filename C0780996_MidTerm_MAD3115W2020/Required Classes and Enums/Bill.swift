@@ -14,9 +14,10 @@ init(billId: String, billDate: Date, billType: BillType)
     self.billDate = billDate
     }
     
-public func billCalculate() -> Double
+public func billCalculation() -> Double
  {
-    return 0.0
+    var x: Double = 0.0
+    return x
  }
     
 }

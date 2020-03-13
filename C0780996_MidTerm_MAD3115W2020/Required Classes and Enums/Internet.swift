@@ -16,7 +16,7 @@ public class Internet: Bill
     }
     
    
-       func billCalculation() -> Double
+    override public func billCalculation() -> Double
      {
         var price: Double = 0.0
           

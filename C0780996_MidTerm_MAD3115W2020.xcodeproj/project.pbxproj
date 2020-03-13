@@ -79,11 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				BDFEE599241B9F9F003D12B6 /* Customer.swift */,
+				BD1111BF241839B8006FDA3E /* Bill.swift */,
 				BD1111C1241839D4006FDA3E /* BillType.swift */,
 				BD1111C524183AD6006FDA3E /* Internet.swift */,
 				BD1111C324183A70006FDA3E /* Hydro.swift */,
 				BD1111C724183BC9006FDA3E /* Mobile.swift */,
-				BD1111BF241839B8006FDA3E /* Bill.swift */,
 			);
 			path = "Required Classes and Enums";
 			sourceTree = "<group>";

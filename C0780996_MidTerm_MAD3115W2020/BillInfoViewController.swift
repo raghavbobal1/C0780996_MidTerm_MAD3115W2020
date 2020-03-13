@@ -69,7 +69,7 @@ extension BillInfoViewController: UITableViewDataSource,
           cell.lblBillId?.text = billList.billId
           cell.lblBillDate?.text = billList.billDate.getFormattedDate()
           cell.imgIcon.image = UIImage(named:"mobileIcon")
-          cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculate())
+          cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculation())
           cell.backgroundColor = UIColor(red:0.97, green:0.84, blue:1.00, alpha:1.0)
         }
            
@@ -78,7 +78,7 @@ extension BillInfoViewController: UITableViewDataSource,
          cell.lblBillId?.text = billList.billId
          cell.lblBillDate?.text = billList.billDate.getFormattedDate()
          cell.imgIcon.image = UIImage(named:"hydroIcon")
-         cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculate())
+         cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculation())
          cell.backgroundColor = UIColor(red:0.95, green:1.00, blue:0.77, alpha:1.0)
          }
            
@@ -87,7 +87,7 @@ extension BillInfoViewController: UITableViewDataSource,
          cell.lblBillId?.text = billList.billId
          cell.lblBillDate?.text = billList.billDate.getFormattedDate()
          cell.imgIcon.image = UIImage(named:"internetIcon")
-         cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculate())
+         cell.lblBillAmount.text = String(format:"$%.2f", billList.billCalculation())
          cell.backgroundColor = UIColor(red:0.66, green:0.98, blue:1.00, alpha:1.0)
          }
           return cell

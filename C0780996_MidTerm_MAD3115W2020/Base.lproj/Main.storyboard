@@ -345,7 +345,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="btnViewBills:" destination="ISg-k4-5VI" eventType="touchUpInside" id="TVc-4B-MRM"/>
+                                    <action selector="btnViewBills:" destination="ISg-k4-5VI" eventType="touchUpInside" id="4Zt-oJ-mmU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -410,7 +410,7 @@
         <!--Bill Info View Controller-->
         <scene sceneID="wA9-LR-w4T">
             <objects>
-                <viewController storyboardIdentifier="billinfoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H9c-JO-ArV" customClass="BillInfoViewController" customModule="C0780996_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="billInfoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H9c-JO-ArV" customClass="BillInfoViewController" customModule="C0780996_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0a9-ab-IKg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

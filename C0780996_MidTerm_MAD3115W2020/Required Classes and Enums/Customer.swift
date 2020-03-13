@@ -4,16 +4,16 @@ import UIKit
 class Customer
 {
     var customerId: String
-    var name: String?
+    var name: String
     var email: String
     var userName: String
-    var password: String?
+    var password: String
     var mobileNumber: String
-    var dob: String?
+    var dob: String
     lazy var customerBills = [String:Bill]()
     var totalBillAmount: Double = 0.0
 
-    init(customerId: String, name: String, email: String, userName: String, password: String,mobileNumber: String,dob:String?)
+    init(customerId: String, name: String, email: String, userName: String, password: String,mobileNumber: String,dob:String)
     {
         self.customerId = customerId
         self.name = name
