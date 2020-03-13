@@ -16,4 +16,4 @@ Part #1 - Edit launchScreen, implement proper login/logout, display a list of cu
 * [Git Hub](https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314) - Used for mobile number validation and exception handling for mobile number.
 * [Plist](https://learnappmaking.com/plist-property-list-swift-how-to/)- Used for adding and using Plists.
 * [Date Picker](https://stackoverflow.com/questions/48109663/cant-set-a-converted-date-from-string-as-minimum-date-in-datepicker)- helped with adding date picker.
-* [GITG] - Used to remove a git error that was causing problems in commiting and pushing the code.
+* [GITG](https://superuser.com/questions/283309/how-to-delete-the-git-reference-refs-original-refs-heads-master) - Used to remove a git error that was causing problems in commiting and pushing the code.
