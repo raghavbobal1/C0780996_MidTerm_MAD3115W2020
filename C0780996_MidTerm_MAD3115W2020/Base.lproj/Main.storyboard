@@ -631,7 +631,8 @@
                         <viewLayoutGuide key="safeArea" id="Og0-IU-DiH"/>
                     </view>
                     <connections>
-                        <outlet property="lblBackground" destination="bLx-RX-OKz" id="rCA-0I-MxC"/>
+                        <outlet property="lblAllAmount" destination="K6N-qd-sDt" id="q97-AT-0o2"/>
+                        <outlet property="lblBackGround" destination="bLx-RX-OKz" id="PvK-k7-18v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooq-Ox-MQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
