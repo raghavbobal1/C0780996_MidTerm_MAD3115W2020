@@ -631,9 +631,7 @@
                         <viewLayoutGuide key="safeArea" id="Og0-IU-DiH"/>
                     </view>
                     <connections>
-                        <outlet property="lblAllAmount" destination="K6N-qd-sDt" id="Dk1-6n-cpU"/>
                         <outlet property="lblBackground" destination="bLx-RX-OKz" id="rCA-0I-MxC"/>
-                        <outlet property="tblBillDetails" destination="Mdi-nl-cCK" id="pRm-Do-lXD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooq-Ox-MQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
