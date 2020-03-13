@@ -5,7 +5,8 @@ RAGHAV BOBAL (C0780996)
 # PROJECT DESCRIPTION
 An application that calculates the total bills for a customer. A bill could be an internet bill, a hydro bill,a bill for mobile usage or can be an insurance bill. A customer may or may not have multiple bills.
 
-Part #1 - Edit launchScreen, implement proper login/logout, display a list of customers, add new customers, data access and storage with singleton class, validations, display errors and alerts, display basic customer information
+Part #1 - Edit launchScreen, implement proper login/logout, display a list of customers, add new customers, data access and storage with singleton class, validations, display errors and alerts, display basic customer information.
+PART #2 - Display bills of the respective customers, adding a button to add new bills for each respective customer and adding adding three new respective view controllers and designed it accordingly.
 # PROJECT STRUCTURE
 
 <img src="https://i93.servimg.com/u/f93/18/45/29/87/classt10.png" alt="Class Structure" style="float: left; margin-right: 10px;"/>
